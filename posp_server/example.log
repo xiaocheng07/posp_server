@@ -1,0 +1,660 @@
+DEBUG main cn.com.bestpay.posp.netty.module.Contants - 加载backUrl:http://183.62.49.173:8025
+DEBUG main cn.com.bestpay.posp.netty.module.Contants - 加载frontUrl:http://183.62.49.173:8025
+DEBUG main io.netty.util.internal.logging.InternalLoggerFactory - Using Log4J as the default logging framework
+DEBUG main io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 8
+DEBUG main io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+DEBUG main io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+DEBUG main io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+DEBUG main io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: true
+DEBUG main io.netty.util.internal.PlatformDependent - Platform: Windows
+DEBUG main io.netty.util.internal.PlatformDependent - Java version: 7
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.noUnsafe: false
+DEBUG main io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.noJavassist: false
+DEBUG main io.netty.util.internal.PlatformDependent - Javassist: unavailable
+DEBUG main io.netty.util.internal.PlatformDependent - You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: C:\Users\yzh\AppData\Local\Temp (java.io.tmpdir)
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+DEBUG main io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+DEBUG main io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+DEBUG main io.netty.util.internal.ThreadLocalRandom - -Dio.netty.initialSeedUniquifier: 0x089da0d7d6315a42 (took 10 ms)
+DEBUG main io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: unpooled
+DEBUG main io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 65536
+DEBUG main io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+DEBUG main io.netty.util.NetUtil - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+DEBUG main io.netty.util.NetUtil - \proc\sys\net\core\somaxconn: 200 (non-existent)
+INFO main cn.com.bestpay.posp.netty.httpserver.BackHttpServer - 后台通知服务启动
+INFO main cn.com.bestpay.posp.netty.tcpserver.PospTCPServer - TCP Server start! 
+INFO main cn.com.bestpay.posp.netty.tcpserver.PospTCPServer - Client alive count:[0]! 
+DEBUG nioEventLoopGroup-5-1 io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.bytebuf.checkAccessible: true
+DEBUG nioEventLoopGroup-5-1 io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+DEBUG nioEventLoopGroup-5-1 io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.maxRecords: 4
+DEBUG nioEventLoopGroup-5-1 io.netty.util.Recycler - -Dio.netty.recycler.maxCapacity.default: 262144
+DEBUG nioEventLoopGroup-5-1 io.netty.util.internal.Cleaner0 - java.nio.ByteBuffer.cleaner(): available
+DEBUG nioEventLoopGroup-5-1 cn.com.bestpay.posp.netty.handler.PospTcpServerHandler - 收到POSP请求:[cn.com.bestpay.posp.system.entity.TranDatas@5a6c4a07]
+DEBUG nioEventLoopGroup-5-1 cn.com.bestpay.posp.netty.handler.PospTcpServerHandler - [201502112158176042015111121581700] ： 收到POSP请求! 
+DEBUG nioEventLoopGroup-5-1 cn.com.bestpay.posp.netty.client.TransPospToUnipay - [201502112158176042015111121581700] debug： 发送银联数据:{txnType=00, channelType=08, merId=888888888888888, acqInsCode=48375800, txnSubType=00, version=5.0.0, signMethod=01, certId=132428167074978684174718476555696101288, encoding=UTF-8, bizType=000000, encryptCertId=137445581060, orderId=20150211215817604, signature=JiS+cFIvlTpwEQKbyehMcfSf2bHBYMe/MFhg2otmYPcXu29qFyPx4moy1H7CEOscbYwObNrVml4N/fbr7duVUp+UwaHeyoYeuOkfhz7KYPanP4gonVxluISS9Dybt9AsYWyN+5mPpib9dxlSxvlektwcVpIdPGWvKtGeknqAhrs=, accessType=1, txnTime=20151111215817}
+DEBUG nioEventLoopGroup-5-1 cn.com.bestpay.posp.netty.client.TransPospToUnipay - [201502112158176042015111121581700] debug： 银联同步返回数据[status:200]:txnType=00&respCode=11&channelType=08&merId=888888888888888&acqInsCode=48375800&txnSubType=00&version=5.0.0&signMethod=01&certId=3474813271258769001041842579301293446&encoding=UTF-8&respMsg=[9100004]Signature verification failed&bizType=000000&encryptCertId=137445581060&signature=VwyB40Ex9DprWRqTXqjoG+NYSHL6yM/XOecq1H7syqUowjbPV1Xr7TciY/fMWluv8u1CgevmDGDVqCn8uzjbCflhUSJtNyYm7jMnIuuA29bMeWZ/hHeMz+SAzl/mJRMhju5BtZBR/ZiOS1vjpKbS+yXQbvb+64/5ROLIIYgLsq2uWafsLNcygnNTq52XyJ1+snisusa7dJHgKK5wmCQSc+yyeRY8Ii0snRQIxrNdr3oVQM/Y8G7/qe2oQNlBc29PD+7L575Uw/2Wg1vkN8TP0h2nlJJiC7puX2VBuR+B+qYjPKRGd0zslhUGSjcgj1diKMN0iMFHaBG8giTg0AL1Wg==&orderId=20150211215817604&txnTime=20151111215817&accessType=1
+DEBUG nioEventLoopGroup-5-1 cn.com.bestpay.posp.netty.handler.PospTcpServerHandler - [201502112158176042015111121581700] ： 银联同步响应! 
+INFO main cn.com.bestpay.posp.netty.tcpserver.PospTCPServer - Client alive count:[1]! 
+INFO main cn.com.bestpay.posp.netty.tcpserver.PospTCPServer - Client alive count:[1]! 
+INFO main cn.com.bestpay.posp.netty.tcpserver.PospTCPServer - Client alive count:[1]! 
+INFO main cn.com.bestpay.posp.netty.tcpserver.PospTCPServer - Client alive count:[1]! 
+INFO main cn.com.bestpay.posp.netty.tcpserver.PospTCPServer - Client alive count:[1]! 
+INFO main cn.com.bestpay.posp.netty.tcpserver.PospTCPServer - Client alive count:[1]! 
+INFO main cn.com.bestpay.posp.netty.tcpserver.PospTCPServer - Client alive count:[1]! 
+INFO main cn.com.bestpay.posp.netty.module.NettyChannelMap - [201502112158176042015111121581700] info： remove channel! 
+INFO main cn.com.bestpay.posp.netty.tcpserver.PospTCPServer - Client alive count:[0]! 
+INFO main cn.com.bestpay.posp.netty.tcpserver.PospTCPServer - Client alive count:[0]! 
+INFO main cn.com.bestpay.posp.netty.tcpserver.PospTCPServer - Client alive count:[0]! 
+INFO main cn.com.bestpay.posp.netty.tcpserver.PospTCPServer - Client alive count:[0]! 
+INFO main cn.com.bestpay.posp.netty.tcpserver.PospTCPServer - Client alive count:[0]! 
+INFO main cn.com.bestpay.posp.netty.tcpserver.PospTCPServer - Client alive count:[0]! 
+INFO main cn.com.bestpay.posp.netty.tcpserver.PospTCPServer - Client alive count:[0]! 
+INFO main cn.com.bestpay.posp.netty.tcpserver.PospTCPServer - Client alive count:[0]! 
+INFO main cn.com.bestpay.posp.netty.tcpserver.PospTCPServer - Client alive count:[0]! 
+INFO main cn.com.bestpay.posp.netty.tcpserver.PospTCPServer - Client alive count:[0]! 
+DEBUG main cn.com.bestpay.posp.netty.module.Contants - 加载backUrl:http://183.62.49.173:8025
+DEBUG main cn.com.bestpay.posp.netty.module.Contants - 加载frontUrl:http://183.62.49.173:8025
+DEBUG main io.netty.util.internal.logging.InternalLoggerFactory - Using Log4J as the default logging framework
+DEBUG main io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 8
+DEBUG main io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+DEBUG main io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+DEBUG main io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+DEBUG main io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: true
+DEBUG main io.netty.util.internal.PlatformDependent - Platform: Windows
+DEBUG main io.netty.util.internal.PlatformDependent - Java version: 7
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.noUnsafe: false
+DEBUG main io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.noJavassist: false
+DEBUG main io.netty.util.internal.PlatformDependent - Javassist: unavailable
+DEBUG main io.netty.util.internal.PlatformDependent - You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: C:\Users\yzh\AppData\Local\Temp (java.io.tmpdir)
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+DEBUG main io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+DEBUG main io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+DEBUG main io.netty.util.internal.ThreadLocalRandom - -Dio.netty.initialSeedUniquifier: 0x9a096155d5161521 (took 10 ms)
+DEBUG main io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: unpooled
+DEBUG main io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 65536
+DEBUG main io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+DEBUG main io.netty.util.NetUtil - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+DEBUG main io.netty.util.NetUtil - \proc\sys\net\core\somaxconn: 200 (non-existent)
+INFO main cn.com.bestpay.posp.netty.httpserver.BackHttpServer - 后台通知服务启动失败
+ERROR main cn.com.bestpay.posp.netty.tcpserver.PospTCPServer - TCP Server start error! 
+DEBUG main cn.com.bestpay.posp.netty.module.Contants - 加载backUrl:http://183.62.49.173:8025
+DEBUG main cn.com.bestpay.posp.netty.module.Contants - 加载frontUrl:http://183.62.49.173:8025
+DEBUG main io.netty.util.internal.logging.InternalLoggerFactory - Using Log4J as the default logging framework
+DEBUG main io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 8
+DEBUG main io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+DEBUG main io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+DEBUG main io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+DEBUG main io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: true
+DEBUG main io.netty.util.internal.PlatformDependent - Platform: Windows
+DEBUG main io.netty.util.internal.PlatformDependent - Java version: 7
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.noUnsafe: false
+DEBUG main io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.noJavassist: false
+DEBUG main io.netty.util.internal.PlatformDependent - Javassist: unavailable
+DEBUG main io.netty.util.internal.PlatformDependent - You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: C:\Users\yzh\AppData\Local\Temp (java.io.tmpdir)
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+DEBUG main io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+DEBUG main io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+DEBUG main io.netty.util.internal.ThreadLocalRandom - -Dio.netty.initialSeedUniquifier: 0xd50bae1443f7ee9e (took 10 ms)
+DEBUG main io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: unpooled
+DEBUG main io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 65536
+DEBUG main io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+DEBUG main io.netty.util.NetUtil - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+DEBUG main io.netty.util.NetUtil - \proc\sys\net\core\somaxconn: 200 (non-existent)
+INFO main cn.com.bestpay.posp.netty.httpserver.BackHttpServer - 后台通知服务启动失败
+DEBUG main cn.com.bestpay.posp.netty.module.Contants - 加载backUrl:http://183.62.49.173:8025
+DEBUG main cn.com.bestpay.posp.netty.module.Contants - 加载frontUrl:http://183.62.49.173:8025
+DEBUG main io.netty.util.internal.logging.InternalLoggerFactory - Using Log4J as the default logging framework
+DEBUG main io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 8
+DEBUG main io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+DEBUG main io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+DEBUG main io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+DEBUG main io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: true
+DEBUG main io.netty.util.internal.PlatformDependent - Platform: Windows
+DEBUG main io.netty.util.internal.PlatformDependent - Java version: 7
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.noUnsafe: false
+DEBUG main io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.noJavassist: false
+DEBUG main io.netty.util.internal.PlatformDependent - Javassist: unavailable
+DEBUG main io.netty.util.internal.PlatformDependent - You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: C:\Users\yzh\AppData\Local\Temp (java.io.tmpdir)
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+DEBUG main io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+DEBUG main io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+DEBUG main io.netty.util.internal.ThreadLocalRandom - -Dio.netty.initialSeedUniquifier: 0x26caa3397da303a8 (took 11 ms)
+DEBUG main io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: unpooled
+DEBUG main io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 65536
+DEBUG main io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+DEBUG main io.netty.util.NetUtil - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+DEBUG main io.netty.util.NetUtil - \proc\sys\net\core\somaxconn: 200 (non-existent)
+INFO main cn.com.bestpay.posp.netty.httpserver.BackHttpServer - 后台通知服务启动
+DEBUG nioEventLoopGroup-3-1 io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.bytebuf.checkAccessible: true
+DEBUG nioEventLoopGroup-3-1 io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+DEBUG nioEventLoopGroup-3-1 io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.maxRecords: 4
+DEBUG nioEventLoopGroup-3-3 io.netty.util.Recycler - -Dio.netty.recycler.maxCapacity.default: 262144
+DEBUG nioEventLoopGroup-3-3 io.netty.util.internal.Cleaner0 - java.nio.ByteBuffer.cleaner(): available
+DEBUG nioEventLoopGroup-3-3 cn.com.bestpay.posp.netty.handler.HttpServerHandler - 收到银联回调：{}
+ERROR nioEventLoopGroup-3-3 cn.com.bestpay.posp.netty.handler.HttpServerHandler - [da389f07-a05f-430f-ab96-4bd7c5040def] error： 银联回调没有找到原交易! 
+DEBUG nioEventLoopGroup-3-3 cn.com.bestpay.posp.netty.handler.HttpServerHandler - 响应银联交易成功
+DEBUG nioEventLoopGroup-3-3 io.netty.handler.codec.compression.ZlibCodecFactory - -Dio.netty.noJdkZlibDecoder: true
+DEBUG nioEventLoopGroup-3-3 io.netty.handler.codec.compression.ZlibCodecFactory - -Dio.netty.noJdkZlibEncoder: false
+DEBUG nioEventLoopGroup-3-4 cn.com.bestpay.posp.netty.handler.HttpServerHandler - 收到银联回调：{}
+ERROR nioEventLoopGroup-3-4 cn.com.bestpay.posp.netty.handler.HttpServerHandler - [6b8dc2f2-bb50-4d47-bc6d-bf1e2f20f404] error： 银联回调没有找到原交易! 
+DEBUG nioEventLoopGroup-3-4 cn.com.bestpay.posp.netty.handler.HttpServerHandler - 响应银联交易成功
+DEBUG nioEventLoopGroup-3-5 cn.com.bestpay.posp.netty.handler.HttpServerHandler - 收到银联回调：{}
+ERROR nioEventLoopGroup-3-5 cn.com.bestpay.posp.netty.handler.HttpServerHandler - [c0e43385-560c-480b-9bea-7d5b8a0ed680] error： 银联回调没有找到原交易! 
+DEBUG nioEventLoopGroup-3-5 cn.com.bestpay.posp.netty.handler.HttpServerHandler - 响应银联交易成功
+DEBUG main cn.com.bestpay.posp.netty.module.Contants - 加载backUrl:http://183.62.49.173:8025
+DEBUG main cn.com.bestpay.posp.netty.module.Contants - 加载frontUrl:http://183.62.49.173:8025
+DEBUG main io.netty.util.internal.logging.InternalLoggerFactory - Using Log4J as the default logging framework
+DEBUG main io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 8
+DEBUG main io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+DEBUG main io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+DEBUG main io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+DEBUG main io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: true
+DEBUG main io.netty.util.internal.PlatformDependent - Platform: Windows
+DEBUG main io.netty.util.internal.PlatformDependent - Java version: 7
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.noUnsafe: false
+DEBUG main io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.noJavassist: false
+DEBUG main io.netty.util.internal.PlatformDependent - Javassist: unavailable
+DEBUG main io.netty.util.internal.PlatformDependent - You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: C:\Users\yzh\AppData\Local\Temp (java.io.tmpdir)
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+DEBUG main io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+DEBUG main io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+DEBUG main io.netty.util.internal.ThreadLocalRandom - -Dio.netty.initialSeedUniquifier: 0x352bbaef0169dfd0 (took 9 ms)
+DEBUG main io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: unpooled
+DEBUG main io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 65536
+DEBUG main io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+DEBUG main io.netty.util.NetUtil - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+DEBUG main io.netty.util.NetUtil - \proc\sys\net\core\somaxconn: 200 (non-existent)
+INFO main cn.com.bestpay.posp.netty.httpserver.BackHttpServer - 后台通知服务启动
+DEBUG nioEventLoopGroup-3-2 io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.bytebuf.checkAccessible: true
+DEBUG nioEventLoopGroup-3-2 io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+DEBUG nioEventLoopGroup-3-2 io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.maxRecords: 4
+DEBUG nioEventLoopGroup-3-3 io.netty.util.Recycler - -Dio.netty.recycler.maxCapacity.default: 262144
+DEBUG nioEventLoopGroup-3-3 io.netty.util.internal.Cleaner0 - java.nio.ByteBuffer.cleaner(): available
+DEBUG nioEventLoopGroup-3-3 cn.com.bestpay.posp.netty.handler.HttpServerHandler - 收到银联回调：{}
+ERROR nioEventLoopGroup-3-3 cn.com.bestpay.posp.netty.handler.HttpServerHandler - [3a38ee9a-1127-4b99-8413-9da86eb6d772] error： 银联回调没有找到原交易! 
+DEBUG nioEventLoopGroup-3-3 io.netty.handler.codec.compression.ZlibCodecFactory - -Dio.netty.noJdkZlibDecoder: true
+DEBUG nioEventLoopGroup-3-3 io.netty.handler.codec.compression.ZlibCodecFactory - -Dio.netty.noJdkZlibEncoder: false
+DEBUG nioEventLoopGroup-3-4 cn.com.bestpay.posp.netty.handler.HttpServerHandler - 收到银联回调：{}
+ERROR nioEventLoopGroup-3-4 cn.com.bestpay.posp.netty.handler.HttpServerHandler - [cc363b69-03f5-4a90-b1b7-cee582fc382d] error： 银联回调没有找到原交易! 
+DEBUG nioEventLoopGroup-3-5 cn.com.bestpay.posp.netty.handler.HttpServerHandler - 收到银联回调：{}
+ERROR nioEventLoopGroup-3-5 cn.com.bestpay.posp.netty.handler.HttpServerHandler - [7522699b-9439-4707-9854-e694589027be] error： 银联回调没有找到原交易! 
+DEBUG main cn.com.bestpay.posp.netty.module.Contants - 加载backUrl:http://183.62.49.173:8025
+DEBUG main cn.com.bestpay.posp.netty.module.Contants - 加载frontUrl:http://183.62.49.173:8025
+DEBUG main io.netty.util.internal.logging.InternalLoggerFactory - Using Log4J as the default logging framework
+DEBUG main io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 8
+DEBUG main io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+DEBUG main io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+DEBUG main io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+DEBUG main io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: true
+DEBUG main io.netty.util.internal.PlatformDependent - Platform: Windows
+DEBUG main io.netty.util.internal.PlatformDependent - Java version: 7
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.noUnsafe: false
+DEBUG main io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.noJavassist: false
+DEBUG main io.netty.util.internal.PlatformDependent - Javassist: unavailable
+DEBUG main io.netty.util.internal.PlatformDependent - You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: C:\Users\yzh\AppData\Local\Temp (java.io.tmpdir)
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+DEBUG main io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+DEBUG main io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+DEBUG main io.netty.util.internal.ThreadLocalRandom - -Dio.netty.initialSeedUniquifier: 0x833742763afe72ce (took 13 ms)
+DEBUG main io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: unpooled
+DEBUG main io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 65536
+DEBUG main io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+DEBUG main io.netty.util.NetUtil - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+DEBUG main io.netty.util.NetUtil - \proc\sys\net\core\somaxconn: 200 (non-existent)
+INFO main cn.com.bestpay.posp.netty.httpserver.BackHttpServer - 后台通知服务启动
+DEBUG nioEventLoopGroup-3-2 io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.bytebuf.checkAccessible: true
+DEBUG nioEventLoopGroup-3-2 io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+DEBUG nioEventLoopGroup-3-2 io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.maxRecords: 4
+DEBUG nioEventLoopGroup-3-3 io.netty.util.Recycler - -Dio.netty.recycler.maxCapacity.default: 262144
+DEBUG nioEventLoopGroup-3-3 io.netty.util.internal.Cleaner0 - java.nio.ByteBuffer.cleaner(): available
+DEBUG nioEventLoopGroup-3-3 io.netty.handler.codec.compression.ZlibCodecFactory - -Dio.netty.noJdkZlibDecoder: true
+DEBUG nioEventLoopGroup-3-3 io.netty.handler.codec.compression.ZlibCodecFactory - -Dio.netty.noJdkZlibEncoder: false
+ERROR nioEventLoopGroup-3-3 cn.com.bestpay.posp.netty.handler.HttpServerHandler - http请求处理异常
+DEBUG main cn.com.bestpay.posp.netty.module.Contants - 加载backUrl:http://183.62.49.173:8025
+DEBUG main cn.com.bestpay.posp.netty.module.Contants - 加载frontUrl:http://183.62.49.173:8025
+DEBUG main io.netty.util.internal.logging.InternalLoggerFactory - Using Log4J as the default logging framework
+DEBUG main io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 8
+DEBUG main io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+DEBUG main io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+DEBUG main io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+DEBUG main io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: true
+DEBUG main io.netty.util.internal.PlatformDependent - Platform: Windows
+DEBUG main io.netty.util.internal.PlatformDependent - Java version: 7
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.noUnsafe: false
+DEBUG main io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.noJavassist: false
+DEBUG main io.netty.util.internal.PlatformDependent - Javassist: unavailable
+DEBUG main io.netty.util.internal.PlatformDependent - You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: C:\Users\yzh\AppData\Local\Temp (java.io.tmpdir)
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+DEBUG main io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+DEBUG main io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+DEBUG main io.netty.util.internal.ThreadLocalRandom - -Dio.netty.initialSeedUniquifier: 0x2086b606c8f3346d (took 11 ms)
+DEBUG main io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: unpooled
+DEBUG main io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 65536
+DEBUG main io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+DEBUG main io.netty.util.NetUtil - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+DEBUG main io.netty.util.NetUtil - \proc\sys\net\core\somaxconn: 200 (non-existent)
+INFO main cn.com.bestpay.posp.netty.httpserver.BackHttpServer - 后台通知服务启动
+DEBUG nioEventLoopGroup-3-1 io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.bytebuf.checkAccessible: true
+DEBUG nioEventLoopGroup-3-1 io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+DEBUG nioEventLoopGroup-3-1 io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.maxRecords: 4
+DEBUG nioEventLoopGroup-3-5 io.netty.util.Recycler - -Dio.netty.recycler.maxCapacity.default: 262144
+DEBUG nioEventLoopGroup-3-5 io.netty.util.internal.Cleaner0 - java.nio.ByteBuffer.cleaner(): available
+DEBUG nioEventLoopGroup-3-5 cn.com.bestpay.posp.netty.handler.HttpServerHandler - 收到银联回调：{method=get}
+DEBUG nioEventLoopGroup-3-5 io.netty.handler.codec.compression.ZlibCodecFactory - -Dio.netty.noJdkZlibDecoder: true
+DEBUG nioEventLoopGroup-3-5 io.netty.handler.codec.compression.ZlibCodecFactory - -Dio.netty.noJdkZlibEncoder: false
+DEBUG nioEventLoopGroup-3-5 cn.com.bestpay.posp.netty.handler.HttpServerHandler - 收到银联回调：{method=get}
+ERROR nioEventLoopGroup-3-5 cn.com.bestpay.posp.netty.handler.HttpServerHandler - http请求处理异常
+ERROR main cn.com.bestpay.posp.netty.module.Contants - 加载环境变量失败：unipay_env.properties
+F:\mycode\posp_server\target\classes\cn\com\bestpay\posp\netty\module\unipay_env.properties (系统找不到指定的文件。)
+DEBUG main cn.com.bestpay.posp.netty.module.Contants - TCP端口:0
+DEBUG main cn.com.bestpay.posp.netty.module.Contants - HTTP端口:0
+DEBUG main io.netty.util.internal.logging.InternalLoggerFactory - Using Log4J as the default logging framework
+DEBUG main io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 8
+DEBUG main io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+DEBUG main io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+DEBUG main io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+DEBUG main io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: true
+DEBUG main io.netty.util.internal.PlatformDependent - Platform: Windows
+DEBUG main io.netty.util.internal.PlatformDependent - Java version: 7
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.noUnsafe: false
+DEBUG main io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.noJavassist: false
+DEBUG main io.netty.util.internal.PlatformDependent - Javassist: unavailable
+DEBUG main io.netty.util.internal.PlatformDependent - You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: C:\Users\yzh\AppData\Local\Temp (java.io.tmpdir)
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+DEBUG main io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+DEBUG main io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+DEBUG main io.netty.util.internal.ThreadLocalRandom - -Dio.netty.initialSeedUniquifier: 0xe44ded06ba29ceb4 (took 11 ms)
+DEBUG main io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: unpooled
+DEBUG main io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 65536
+DEBUG main io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+DEBUG main io.netty.util.NetUtil - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+DEBUG main io.netty.util.NetUtil - \proc\sys\net\core\somaxconn: 200 (non-existent)
+INFO main cn.com.bestpay.posp.netty.httpserver.BackHttpServer - 后台通知服务启动
+INFO main cn.com.bestpay.posp.netty.httpserver.BackHttpServer - 后台通知服务启动
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - Client alive count:[0]! 
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - Client alive count:[0]! 
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - Client alive count:[0]! 
+DEBUG main cn.com.bestpay.posp.netty.module.Contants - TCP端口:9880
+DEBUG main cn.com.bestpay.posp.netty.module.Contants - HTTP端口:8025
+DEBUG main io.netty.util.internal.logging.InternalLoggerFactory - Using Log4J as the default logging framework
+DEBUG main io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 8
+DEBUG main io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+DEBUG main io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+DEBUG main io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+DEBUG main io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: true
+DEBUG main io.netty.util.internal.PlatformDependent - Platform: Windows
+DEBUG main io.netty.util.internal.PlatformDependent - Java version: 7
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.noUnsafe: false
+DEBUG main io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.noJavassist: false
+DEBUG main io.netty.util.internal.PlatformDependent - Javassist: unavailable
+DEBUG main io.netty.util.internal.PlatformDependent - You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: C:\Users\yzh\AppData\Local\Temp (java.io.tmpdir)
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+DEBUG main io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+DEBUG main io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+DEBUG main io.netty.util.internal.ThreadLocalRandom - -Dio.netty.initialSeedUniquifier: 0xd3d64b844bce2c08 (took 10 ms)
+DEBUG main io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: unpooled
+DEBUG main io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 65536
+DEBUG main io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+DEBUG main io.netty.util.NetUtil - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+DEBUG main io.netty.util.NetUtil - \proc\sys\net\core\somaxconn: 200 (non-existent)
+INFO main cn.com.bestpay.posp.netty.httpserver.BackHttpServer - 后台通知服务启动
+INFO main cn.com.bestpay.posp.netty.tcpserver.PospTCPServer - TCP Server start! 
+INFO main cn.com.bestpay.posp.netty.tcpserver.PospTCPServer - Client alive count:[0]! 
+INFO main cn.com.bestpay.posp.netty.module.Contants - TCP端口:9880
+INFO main cn.com.bestpay.posp.netty.module.Contants - HTTP端口:8025
+DEBUG main io.netty.util.internal.logging.InternalLoggerFactory - Using Log4J as the default logging framework
+DEBUG main io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 8
+DEBUG main io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+DEBUG main io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+DEBUG main io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+DEBUG main io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: true
+DEBUG main io.netty.util.internal.PlatformDependent - Platform: Windows
+DEBUG main io.netty.util.internal.PlatformDependent - Java version: 7
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.noUnsafe: false
+DEBUG main io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.noJavassist: false
+DEBUG main io.netty.util.internal.PlatformDependent - Javassist: unavailable
+DEBUG main io.netty.util.internal.PlatformDependent - You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: C:\Users\yzh\AppData\Local\Temp (java.io.tmpdir)
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+DEBUG main io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+DEBUG main io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+DEBUG main io.netty.util.internal.ThreadLocalRandom - -Dio.netty.initialSeedUniquifier: 0x49030c3d95281076 (took 124 ms)
+DEBUG main io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: unpooled
+DEBUG main io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 65536
+DEBUG main io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+DEBUG main io.netty.util.NetUtil - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+DEBUG main io.netty.util.NetUtil - \proc\sys\net\core\somaxconn: 200 (non-existent)
+INFO main cn.com.bestpay.posp.netty.httpserver.BackHttpServer - 后台通知服务启动
+INFO main cn.com.bestpay.posp.netty.tcpserver.PospTCPServer - TCP Server start! 
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - 暂时没有交易...
+INFO main cn.com.bestpay.posp.netty.module.Contants - TCP端口:9880
+INFO main cn.com.bestpay.posp.netty.module.Contants - HTTP端口:8025
+DEBUG main io.netty.util.internal.logging.InternalLoggerFactory - Using Log4J as the default logging framework
+DEBUG main io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 8
+DEBUG main io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+DEBUG main io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+DEBUG main io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+DEBUG main io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: true
+DEBUG main io.netty.util.internal.PlatformDependent - Platform: Windows
+DEBUG main io.netty.util.internal.PlatformDependent - Java version: 7
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.noUnsafe: false
+DEBUG main io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.noJavassist: false
+DEBUG main io.netty.util.internal.PlatformDependent - Javassist: unavailable
+DEBUG main io.netty.util.internal.PlatformDependent - You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: C:\Users\yzh\AppData\Local\Temp (java.io.tmpdir)
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+DEBUG main io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+DEBUG main io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+DEBUG main io.netty.util.internal.ThreadLocalRandom - -Dio.netty.initialSeedUniquifier: 0xc4eb258bb770ee74 (took 197 ms)
+DEBUG main io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: unpooled
+DEBUG main io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 65536
+DEBUG main io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+DEBUG main io.netty.util.NetUtil - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+DEBUG main io.netty.util.NetUtil - \proc\sys\net\core\somaxconn: 200 (non-existent)
+INFO main cn.com.bestpay.posp.netty.httpserver.BackHttpServer - 后台通知服务启动
+INFO main cn.com.bestpay.posp.netty.tcpserver.PospTCPServer - TCP Server start! 
+INFO main cn.com.bestpay.posp.netty.module.Contants - TCP端口:9880
+INFO main cn.com.bestpay.posp.netty.module.Contants - HTTP端口:8025
+DEBUG main io.netty.util.internal.logging.InternalLoggerFactory - Using Log4J as the default logging framework
+DEBUG main io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 8
+DEBUG main io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+DEBUG main io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+DEBUG main io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+DEBUG main io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: true
+DEBUG main io.netty.util.internal.PlatformDependent - Platform: Windows
+DEBUG main io.netty.util.internal.PlatformDependent - Java version: 7
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.noUnsafe: false
+DEBUG main io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.noJavassist: false
+DEBUG main io.netty.util.internal.PlatformDependent - Javassist: unavailable
+DEBUG main io.netty.util.internal.PlatformDependent - You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: C:\Users\yzh\AppData\Local\Temp (java.io.tmpdir)
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+DEBUG main io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+DEBUG main io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+DEBUG main io.netty.util.internal.ThreadLocalRandom - -Dio.netty.initialSeedUniquifier: 0x0f7a0025e1e66173 (took 13 ms)
+DEBUG main io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: unpooled
+DEBUG main io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 65536
+DEBUG main io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+DEBUG main io.netty.util.NetUtil - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+DEBUG main io.netty.util.NetUtil - \proc\sys\net\core\somaxconn: 200 (non-existent)
+INFO main cn.com.bestpay.posp.netty.httpserver.BackHttpServer - 后台通知服务启动
+INFO main cn.com.bestpay.posp.netty.tcpserver.PospTCPServer - TCP Server start! 
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - 暂时没有交易...
+DEBUG nioEventLoopGroup-5-1 io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.bytebuf.checkAccessible: true
+DEBUG nioEventLoopGroup-5-1 io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+DEBUG nioEventLoopGroup-5-1 io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.maxRecords: 4
+DEBUG nioEventLoopGroup-5-1 io.netty.util.Recycler - -Dio.netty.recycler.maxCapacity.default: 262144
+DEBUG nioEventLoopGroup-5-1 io.netty.util.internal.Cleaner0 - java.nio.ByteBuffer.cleaner(): available
+DEBUG nioEventLoopGroup-5-1 cn.com.bestpay.posp.netty.handler.PospTcpServerHandler - 收到POSP请求:[cn.com.bestpay.posp.system.entity.TranDatas@490f163b]
+INFO nioEventLoopGroup-5-1 cn.com.bestpay.posp.netty.handler.PospTcpServerHandler - [2015121614455420151216144554] ： 收到POSP请求! 
+DEBUG nioEventLoopGroup-5-1 cn.com.bestpay.posp.netty.client.HttpClient - 发银联url[https://101.231.204.80:5000/gateway/api/cardTransReq.do]的请求报文:[txnType=71&channelType=08&currencyCode=156&merId=837448010000000&acqInsCode=48375800&txnSubType=00&customerInfo=e3Bpbj1nK2VSUWhJV3B2WE1GbmtBR09XY3ZhMGp0Ry9DczlqSHJ2YXlNRWowekdLeG1WcGpyWHQ5T2N6NlJteTBOUzlxQkcvcFpiazhjNk9sUUFweUhKUGRGd1REVjFqNUp4TkdmbWJ6eHk3RFJjRHd6V0ZzUjBkU3Uvd09YVWpIOHQ4VGc2Y3Fza2lBVWkwc1h4S0hLOHhCRFE1NXNCMmhsNDFTdGdiUW1LYnVXbm43WGZKaEhraWNmUlg5ZlBXdWNQNjdaZ2ZNSGxVa2tKR3c4T1RtSUxxTFdqeTJaNHRFTHNOcGNTWGNwd1hJWWVkVDRrcEdkYjJFY1YvalBRcXZyUG1rMUIzeHN5VGloL2FvbjNYSmNxTlNRaEdwaXV0ODU1OGI1dGZtd2F6ODhkdm5meUZlM2gydGFKd2QyR3lSMHpyYXRreHc0YzJkeGlobitzZ0ZUVnFtaWc9PX0%3D&version=5.0.0&accType=01&cardTransData=%7BcarrierAppTp%3D3%26carrierTp%3D0%26track2Data%3DM9u4xhNn0EnNQ0PIwy8XHUbpJRgm2Qn7mO4a1SVN5nW%2BSv6oHg5XFnLChP2bCgDESqYb1hjt01W4oeZCf6bnRw3DAUZlopqyvbLsT6YU1gUuFjcZB0lD7iI%2BmlZhFM2qtel%2FBK2E3e6GnN5R3yPzcLqch4VmDava6xe90T%2BTyx%2F6iJ%2ByqqsFjKzQDSLVjhvVxTSVFN1ZEw7ReAe%2BfHa4z4k7ZgBrDQFmn47elalHcIohXdt1v33QcvvLlFYpJZM6PwC07QaizzgOA6plkunBEG7pR4jN1JEPIbhekHHYTglYPe5yIsf5mVFojn3LT3Gn5B4tnhw6iswSsOz2QAzKZw%3D%3D%26track3Data%3DZB96tQ9i2%2FF%2BrEvCco7cOdgykgftYLVNT0g9cZ3JSxHH40nh66OG9u5qi9CpcAhQ6o9nDdf9zvOekPdLZPZgkXXJ0ZEghhvBaprf%2BwI1QTc%2BPHbG2vn6s83CfEwxQ5BDTKjenfMqfCkmcf7t6oWQNoWd4PV9dA8R1Wtk76X6ZrcrmQFWTJcXO3PiEdmvfCNEr7Xs05WZ7FdJPxgS%2FW22v41OmGHPjBkD9cPiI1vjMeFwFUFsI2UDPuNPlFxukPoUiRS1zlHD60gg%2Bxz%2BlJHwjb0WWu8KsyJrQshJedemIoX69%2BNtVlfXUj9XkP%2B355mBtykn%2FPdQII%2BrG4sS0OiBog%3D%3D%7D&signMethod=01&accNo=6210300017273977&merName=%E7%BF%BC%E6%94%AF%E4%BB%98&merAbbr=YZF&certId=132428167074978684174718476555696101288&encoding=UTF-8&reqReserved=%E9%80%8F%E4%BC%A0%E4%BF%A1%E6%81%AF&bizType=000000&merCatCode=0000&orderId=20151216144554&signature=gz5sSs4cN7DHrbSPBH%2BB1MsRQnkCFob2s78NU%2FAqz1SDWEW91N2qratTKBpNiE%2FmQh4eVZCN8ZbJ393LfNUw3qKbAkpJqBmWaNEJc2BOfcl1f1m4yPN0gEFTyRVkFTp42vATm6aoRvnLzle15tq2k%2BrbzYbH%2BD%2Bo8BCyuXhoCPY%3D&txnTime=20151216144554&accessType=1]
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - Client alive count:[1]! 
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - Client alive count:[1]! 
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - Client alive count:[1]! 
+ERROR nioEventLoopGroup-5-1 cn.com.bestpay.posp.netty.client.TransPospToUnipay - [2015121614455420151216144554] ： 请求发送银联失败!
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - Client alive count:[1]! 
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - Client alive count:[1]! 
+INFO nioEventLoopGroup-5-1 cn.com.bestpay.posp.netty.handler.PospTcpServerHandler - [2015121614455420151216144554] ： 银联同步响应，respCode:98 
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - Client alive count:[1]! 
+INFO main cn.com.bestpay.posp.netty.module.NettyChannelMap - [2015121614455420151216144554] info： remove channel! 
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - Client alive count:[0]! 
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - 暂时没有交易...
+DEBUG nioEventLoopGroup-5-2 cn.com.bestpay.posp.netty.handler.PospTcpServerHandler - 收到POSP请求:[cn.com.bestpay.posp.system.entity.TranDatas@2747fda0]
+INFO nioEventLoopGroup-5-2 cn.com.bestpay.posp.netty.handler.PospTcpServerHandler - [2015121614472320151216144723] ： 收到POSP请求! 
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - Client alive count:[0]! 
+DEBUG nioEventLoopGroup-5-2 cn.com.bestpay.posp.netty.client.HttpClient - 发银联url[https://101.231.204.80:5000/gateway/api/cardTransReq.do]的请求报文:[txnType=71&channelType=08&currencyCode=156&merId=837448010000000&acqInsCode=48375800&txnSubType=00&customerInfo=e3Bpbj1Dd2hFdzZRTWw2Sk1ycTBickUzZFVGYytsVlpJMGxxcnR2NFhMYTNra3pCMHNoRHcrMGdYY3F0ckVzMHRxZHlzbzNYWUZGWXJjYjNJUnR3VFBHaVgrc0ZyU1d3aUdXclBnZnQvV1dIMEFXTTR0QlZUamtLTjMyYnFveURhUlJqVklNUEdBSVlQbi83WW80SFJWNk9oeVZIQ29QVm9pQnRCQnpzelB0c1pJd0xnejQ5Nk9pVzZDUzBKZ0JMUC8yd1lxWFNtMTJ5L1B5MTJ6RmV2ZnNCb1M3bitmbmhYaVcwNUNwOXMxaFhQYVRWTkpaTzBGbUJKbklwNzBBYXRTNWRKRVRSWjFUc1dTR1ZwSU4xa20zYzJHRFhOUWVoS0Rnb2tSbHFWNFhoZFVhWExGYWttVnlJWC9Ed1BORVg2TUJaUlFScEV5dU1FRnNUbmYwdDQ4TzdTRFE9PX0%3D&version=5.0.0&accType=01&cardTransData=%7BcarrierAppTp%3D3%26carrierTp%3D0%26track2Data%3DDvDXh%2BVKv%2FlhiYDGapAC6oeU1Nrb67OAcBPwyhXW56vXboBD06jYfZdrxRxkvRI2zNKonmNPemmT0fQRlHKxmq2p%2BEprnd4QzQ9CM2taZGaLi2NrcJgiYhYyoWGMBDXR87LZdyJOZBMu51Xhkf4gKZrAKSdgKC8Mts%2FFNXMIMoUn9FeyzIdXPhVSPRNq%2BsV9KBQRqHD0yeygUiSq%2Bk4LROTDn4XJuke0FH8DkM%2B8IDVgoWYgVJG%2F4KQACk44bwsf3EznEfYX5H%2BqJfTwis3NnRBGCwQyIE%2F97cptztdACD7tSxnBk7aZ1ZqWZ5SXrrHbFY%2BtfGzJvLcJUDHE4YKZ5Q%3D%3D%26track3Data%3DLO%2FaJbMBAB%2BrmNAsjHkr3mF%2BM64pJN0RkqnBYgakXWikgTWJqEJL8AOYC1pIAIZoovr44LXlhoseprL38ZFMJ6OrACVpAIw4ahg9Vy0VeDqDEkD2jcJY64daJKrpIZL8QRkwZEDnrOnF2ayETDDwl%2F7uhuOoraWqgaF5RskvhEd7Agz8HdLigP1iX%2FwK23HMORc9rlXwNiyM1apo4Pp4VJcGLocLnxbMtH3fB7ZuJ2sBmYdSMVJzyIvSeWceLz8%2BQQqnNt9XeocJcJwaIuB1LSF7APieGvNto1ENRBJanY3%2FpPVS0jHKoLWxlE9rIJ9Yo604QeX6ZE5mO93FBxOu%2Fw%3D%3D%7D&signMethod=01&accNo=6210300017273977&merName=%E7%BF%BC%E6%94%AF%E4%BB%98&merAbbr=YZF&certId=132428167074978684174718476555696101288&encoding=UTF-8&reqReserved=%E9%80%8F%E4%BC%A0%E4%BF%A1%E6%81%AF&bizType=000000&merCatCode=0000&orderId=20151216144723&signature=YrBN9amwwtgTiMEIj2WLMLm8kAebItYuLsmG16MWcjThzhaxlctyl66T3LXJaH5PJ50z1OwIbJqTfdVQYgxmgy%2FN8LUw8HBctN3nH3l3nRqrHNyCepQ0K24iy9zamNoDcOlYiaxF5DpBBstyf5nNYRjln5aDVIHc4Kg5kbc635I%3D&txnTime=20151216144723&accessType=1]
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - 暂时没有交易...
+ERROR nioEventLoopGroup-5-2 cn.com.bestpay.posp.netty.client.TransPospToUnipay - [2015121614472320151216144723] ： 请求发送银联失败!
+INFO nioEventLoopGroup-5-2 cn.com.bestpay.posp.netty.handler.PospTcpServerHandler - [2015121614472320151216144723] ： 银联同步响应，respCode:98 
+DEBUG nioEventLoopGroup-5-2 cn.com.bestpay.posp.netty.handler.PospTcpServerHandler - 收到POSP请求:[cn.com.bestpay.posp.system.entity.TranDatas@5171c41f]
+INFO nioEventLoopGroup-5-2 cn.com.bestpay.posp.netty.handler.PospTcpServerHandler - [2015121614472320151216144723] ： 收到POSP请求! 
+DEBUG nioEventLoopGroup-5-2 cn.com.bestpay.posp.netty.client.HttpClient - 发银联url[https://101.231.204.80:5000/gateway/api/cardTransReq.do]的请求报文:[txnType=00&merId=837448010000000&acqInsCode=48375800&txnSubType=01&version=5.0.0&signMethod=01&certId=132428167074978684174718476555696101288&encoding=UTF-8&bizType=000000&signature=rJe8EAXgmM6F%2F%2BYgwlYk5J9vfdVQdXTcxbk4I4Tpe1jlDztM3R0ZHa%2BO%2BhxFHzZdrTHNiRu8cFEYeBAJJobcQa4tinsAqUcvN0ifVmBTK0O7Hu9cvR2X6fZD6PQGWg4526r3B7cpJK8PwS0t%2Fso7IU0iWplxS6BSms%2B2sK6xYYc%3D&orderId=20151216144723&accessType=1&txnTime=20151216144723]
+DEBUG nioEventLoopGroup-5-2 cn.com.bestpay.posp.netty.client.TransPospToUnipay - [2015121614472320151216144723] ： 银联同步返回数据[status:200]:respCode=10&certId=68759585097&signMethod=01&signature=ovx9pFyvg/5cXb7rxQXJJsWYwwp79ZDgUeRiRj2v3PJiZCwNtB5WtQiWoiPQmcaxwiy6cfig63msmgbBeDIyT0vTATxFxLS+NFV/MaIJHfD+5uRypHK/Ov2W0lFpGamofKJs6sHNUKOezewx0hMVQtlVkbri3YZiY6CxTmJ67GwDwXtTiFjMcepf9e+QAcKBp70HH2ygbv/YteA4VRM0dtl0bWKPcLy5Kem7eAL+sCWFEBOP9VxwQeKuv9DnQ8qsC6/nQgkbGM0jIME2J/vQ1cNsxPw86y5upNmV96qVvNhjI2Zz4z88LYpeMYbA9ixIp6Mb4ji5qcK0KWwJqtHOxw==
+INFO nioEventLoopGroup-5-2 cn.com.bestpay.posp.netty.handler.PospTcpServerHandler - [2015121614472320151216144723] ： 银联同步响应，respCode:10 
+DEBUG nioEventLoopGroup-5-2 cn.com.bestpay.posp.netty.handler.PospTcpServerHandler - 收到POSP请求:[cn.com.bestpay.posp.system.entity.TranDatas@5f9bc5bd]
+INFO nioEventLoopGroup-5-2 cn.com.bestpay.posp.netty.handler.PospTcpServerHandler - [2015121614472320151216144723] ： 收到POSP请求! 
+DEBUG nioEventLoopGroup-5-2 cn.com.bestpay.posp.netty.client.HttpClient - 发银联url[https://101.231.204.80:5000/gateway/api/cardTransReq.do]的请求报文:[txnType=00&merId=837448010000000&acqInsCode=48375800&txnSubType=01&version=5.0.0&signMethod=01&certId=132428167074978684174718476555696101288&encoding=UTF-8&bizType=000000&signature=rJe8EAXgmM6F%2F%2BYgwlYk5J9vfdVQdXTcxbk4I4Tpe1jlDztM3R0ZHa%2BO%2BhxFHzZdrTHNiRu8cFEYeBAJJobcQa4tinsAqUcvN0ifVmBTK0O7Hu9cvR2X6fZD6PQGWg4526r3B7cpJK8PwS0t%2Fso7IU0iWplxS6BSms%2B2sK6xYYc%3D&orderId=20151216144723&accessType=1&txnTime=20151216144723]
+DEBUG nioEventLoopGroup-5-2 cn.com.bestpay.posp.netty.client.TransPospToUnipay - [2015121614472320151216144723] ： 银联同步返回数据[status:200]:respCode=10&certId=68759585097&signMethod=01&signature=ovx9pFyvg/5cXb7rxQXJJsWYwwp79ZDgUeRiRj2v3PJiZCwNtB5WtQiWoiPQmcaxwiy6cfig63msmgbBeDIyT0vTATxFxLS+NFV/MaIJHfD+5uRypHK/Ov2W0lFpGamofKJs6sHNUKOezewx0hMVQtlVkbri3YZiY6CxTmJ67GwDwXtTiFjMcepf9e+QAcKBp70HH2ygbv/YteA4VRM0dtl0bWKPcLy5Kem7eAL+sCWFEBOP9VxwQeKuv9DnQ8qsC6/nQgkbGM0jIME2J/vQ1cNsxPw86y5upNmV96qVvNhjI2Zz4z88LYpeMYbA9ixIp6Mb4ji5qcK0KWwJqtHOxw==
+INFO nioEventLoopGroup-5-2 cn.com.bestpay.posp.netty.handler.PospTcpServerHandler - [2015121614472320151216144723] ： 银联同步响应，respCode:10 
+DEBUG nioEventLoopGroup-5-2 cn.com.bestpay.posp.netty.handler.PospTcpServerHandler - 收到POSP请求:[cn.com.bestpay.posp.system.entity.TranDatas@5e834af1]
+INFO nioEventLoopGroup-5-2 cn.com.bestpay.posp.netty.handler.PospTcpServerHandler - [2015121614472320151216144723] ： 收到POSP请求! 
+DEBUG nioEventLoopGroup-5-2 cn.com.bestpay.posp.netty.client.HttpClient - 发银联url[https://101.231.204.80:5000/gateway/api/cardTransReq.do]的请求报文:[txnType=00&merId=837448010000000&acqInsCode=48375800&txnSubType=01&version=5.0.0&signMethod=01&certId=132428167074978684174718476555696101288&encoding=UTF-8&bizType=000000&signature=rJe8EAXgmM6F%2F%2BYgwlYk5J9vfdVQdXTcxbk4I4Tpe1jlDztM3R0ZHa%2BO%2BhxFHzZdrTHNiRu8cFEYeBAJJobcQa4tinsAqUcvN0ifVmBTK0O7Hu9cvR2X6fZD6PQGWg4526r3B7cpJK8PwS0t%2Fso7IU0iWplxS6BSms%2B2sK6xYYc%3D&orderId=20151216144723&accessType=1&txnTime=20151216144723]
+DEBUG nioEventLoopGroup-5-2 cn.com.bestpay.posp.netty.client.TransPospToUnipay - [2015121614472320151216144723] ： 银联同步返回数据[status:200]:respCode=10&certId=68759585097&signMethod=01&signature=ovx9pFyvg/5cXb7rxQXJJsWYwwp79ZDgUeRiRj2v3PJiZCwNtB5WtQiWoiPQmcaxwiy6cfig63msmgbBeDIyT0vTATxFxLS+NFV/MaIJHfD+5uRypHK/Ov2W0lFpGamofKJs6sHNUKOezewx0hMVQtlVkbri3YZiY6CxTmJ67GwDwXtTiFjMcepf9e+QAcKBp70HH2ygbv/YteA4VRM0dtl0bWKPcLy5Kem7eAL+sCWFEBOP9VxwQeKuv9DnQ8qsC6/nQgkbGM0jIME2J/vQ1cNsxPw86y5upNmV96qVvNhjI2Zz4z88LYpeMYbA9ixIp6Mb4ji5qcK0KWwJqtHOxw==
+INFO nioEventLoopGroup-5-2 cn.com.bestpay.posp.netty.handler.PospTcpServerHandler - [2015121614472320151216144723] ： 银联同步响应，respCode:10 
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - Client alive count:[1]! 
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - Client alive count:[1]! 
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - Client alive count:[1]! 
+INFO main cn.com.bestpay.posp.netty.module.NettyChannelMap - [2015121614472320151216144723] info： remove channel! 
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - Client alive count:[0]! 
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - 暂时没有交易...
+DEBUG nioEventLoopGroup-5-3 cn.com.bestpay.posp.netty.handler.PospTcpServerHandler - 收到POSP请求:[cn.com.bestpay.posp.system.entity.TranDatas@5695018b]
+INFO nioEventLoopGroup-5-3 cn.com.bestpay.posp.netty.handler.PospTcpServerHandler - [2015121614552620151216145526] ： 收到POSP请求! 
+DEBUG nioEventLoopGroup-5-3 cn.com.bestpay.posp.netty.client.HttpClient - 发银联url[https://101.231.204.80:5000/gateway/api/cardTransReq.do]的请求报文:[txnType=71&channelType=08&currencyCode=156&merId=837448010000000&acqInsCode=48375800&txnSubType=00&customerInfo=e3Bpbj1XdGZ5eHg0YmJNVmxidDloWGl2MitRNWtQWE9nRXBmK250VWFGV3hhN2NHc1Z6aGcrbHV3REwraWdDSnJib3lxV1ptTW5RRk52dkJQdnNEV0dtUnNmVXhNS1pDRmNXWjVrMVFzVlBUbGx5ejV6SzN0c2JBMWJuK3hGQzhXdzJUWjhpUHRkcm42dTRBL2dKenc1SmpkS3V2cmZta0hwU0VueHpCdGNGZS94MGtJOFBVcFFSdzA2dGFPRG5GblhnVXFDVzZhM1FCNjFGNnp6S2NUTzR6R2NGdmxPMysrS1Z5cUtnQjZNKytrMEhPaTBHV2YxMWpRS2s0blhCc1YyT3dqNE0zZEwvRS91TThUVWROWS9kRjlLYXZFNkdKT3cyRzNuRDQ2cUFYUjFjL1p1Z3RYSWozbTY5dUVBTVNONjViUDBaeExnNjFHZkI4by9ZMWY5bXVhdXc9PX0%3D&version=5.0.0&accType=01&cardTransData=%7BcarrierAppTp%3D3%26carrierTp%3D0%26track2Data%3DJ0pC0wx8JGxZ7d7SLdQzTSqAI%2Fp9ar7Uq2DDs7oVmxqxTT9IwNf%2Bcf%2By3CiEIOJ9x2plHlXP5oi4flrR%2FiLTI49bj6A%2F47jhSenXUJvz0dRSi5Z1%2FN4IGnWdBickA9LyZNDArooGIyAIp8jE31V2429izIFTVdaofj0Mexw02Xts4BhieLOdKsNl42kZtNi4yLuzVJs%2BIM9b2SwlMgThx2Xt%2F8xKD1fn2SgJSNDsgI%2B80mrxfkaZzDPf3OYXeJrr6WV%2Bq%2FTfrtvqIzKfOL9pUtdbewKyB%2B7bxkv0GToFy2TDDPqKQwfvTPydp07v21gYNmd4xFi4YwHs94o3JEnU8Q%3D%3D%26track3Data%3DUcqUvw3YUfXP8fAA5L8uJd4EhSXzy7h%2BOkNNJGlwIneZr3b6PRwCkUP2Qpm0ANoZzf8kwBiirKO3PzG2%2BwHuSpz21UTOiPCB%2BEqv6D1pX%2B3x82y9D9AgteJIrkm5A3VG4LTSgcqYnJxyAf8Us7X3y3sWa7Xt3fWvsWR3BCVbRKFSCZT9En5n9SEBqKRH2OwLjo%2FXjo%2F8of8Uab5y%2BdDkeJsrJNMlijoE9O2rKPEvAkpvFxENDwZZfGaHuXYzcwUshsN4QYVNVfzupCCBKF5L0UByikD9iyHt4EsJgynO%2FH6bdnBVjkQjIuDHIHOXx4IPSgXb5GTUuM3vBPwY79pvRA%3D%3D%7D&signMethod=01&accNo=6221501000003501335&merName=%E7%BF%BC%E6%94%AF%E4%BB%98&merAbbr=YZF&certId=132428167074978684174718476555696101288&encoding=UTF-8&reqReserved=%E9%80%8F%E4%BC%A0%E4%BF%A1%E6%81%AF&bizType=000000&merCatCode=0000&orderId=20151216145526&signature=pu69lL2kv6uuREyAYSsX0WYLLICfe9k%2FaQ2azkveQs6aHdCzVit0uCnv0RRkhOiO7NiX84DyLBvOVmCxspkq%2F04NIt9fyUN1OrjKvu4VK9%2FvJeVI7FA8eRT%2B%2BEduZdyAjqDYS5bcKtTLtrUbDZMnoUusWdT8ATwyoFjfUoO30b8%3D&txnTime=20151216145526&accessType=1]
+DEBUG nioEventLoopGroup-5-3 cn.com.bestpay.posp.netty.client.TransPospToUnipay - [2015121614552620151216145526] ： 银联同步返回数据[status:200]:accNo=6221501000003501335&accessType=1&acqInsCode=48375800&bizType=000000&certId=68759585097&currencyCode=156&encoding=UTF-8&merId=837448010000000&orderId=20151216145526&reqReserved=透传信息&respCode=60&respMsg=交易失败，详情请咨询您的发卡行[1000091]&signMethod=01&txnSubType=00&txnTime=20151216145526&txnType=71&version=5.0.0&signature=QpgjMwETut6VJXLGZLP8uhJN9S275N6HM51bYUmoAdpJrvXY1PlmDWMkzUzQwwb0Vkgzhh4HG9Mf6OSo1z8p8t4rpKZBRnxuZLJLe4Q9N7vmmy5PiLoy6Oop+yNdRW4TUzQz0IM5ZhiDGjDLgMbfOIXuWz4lrHuSdzSlbPlMC9/fxE3eUTj706sMI3E+kcVMU1juPBEIWKJk92CB5tpGA0z4pau6xBxKbFdQe7bvcTrgbXX+zq+942RH0b5WHc86mVyeKcXk4T7+6cyDYUvY7/v00rvvQbGYYcuP/3zEW0ja474oEja4aLvRslPsQaG7pgFu9w31UcwdPGbIPVKlgA==
+INFO nioEventLoopGroup-5-3 cn.com.bestpay.posp.netty.handler.PospTcpServerHandler - [2015121614552620151216145526] ： 银联同步响应，respCode:60 
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - Client alive count:[1]! 
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - Client alive count:[1]! 
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - Client alive count:[1]! 
+INFO main cn.com.bestpay.posp.netty.module.NettyChannelMap - [2015121614552620151216145526] info： remove channel! 
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - Client alive count:[0]! 
+DEBUG nioEventLoopGroup-5-4 cn.com.bestpay.posp.netty.handler.PospTcpServerHandler - 收到POSP请求:[cn.com.bestpay.posp.system.entity.TranDatas@7ae40efd]
+INFO nioEventLoopGroup-5-4 cn.com.bestpay.posp.netty.handler.PospTcpServerHandler - [2015121614560520151216145605] ： 收到POSP请求! 
+DEBUG nioEventLoopGroup-5-4 cn.com.bestpay.posp.netty.client.HttpClient - 发银联url[https://101.231.204.80:5000/gateway/api/cardTransReq.do]的请求报文:[txnType=71&channelType=08&currencyCode=156&merId=837448010000000&acqInsCode=48375800&txnSubType=00&customerInfo=e3Bpbj1kQk1rSDFmZThwOFpybm1CR1lhUmk0UUZoU25nZ2lyNFdyZFF0akUxTVR4ek9tYVhSZ3NBRys5dm96YURRdk5XQWJMUHZyaFZWYitCNCtZY3lxdlY2elN5aWNHSDd5TVljc3ZaT2xVZWxQMy9FMjQxMUlzbTY5bU1rcmF1WDd6a2tvSzNPYlhDOEtBUnJITEdDaDZNTW5ZOFFuYjV1WGltVU9lSnhnREIzMEY3Y0NwblZWbVFpQ2VwNmlqaGkwSm8zSFYxWThCaDcvbzdoNHkybEx1d3ZhVUVPK0tCV05xWjd0VEF6NEVHTWRWdGthMERuQWJ1VWg0YjJqaG5Da0hwbVZMRUpIcGdwTXZid3FmQVVNbHY1eDRiMXdkRGRiWTlNYWRUdElBWXFROTcrdVV1L0ljREI3bHJ0Rnh0V0tIOGd4SUpaRGNRRUNqMEhXMEg3VU9LU1E9PX0%3D&version=5.0.0&accType=01&cardTransData=%7BcarrierAppTp%3D3%26carrierTp%3D0%26track2Data%3DCOG469jKn0tczwtuc%2Bxi1WY70Q4rnKNr8gW03EJvT9nERKvbBohOC6EepF8Qqw2ha2Q9%2FBFdDANtRJUhit9jR2yMl9qawdPD0N1VPy%2BC0zsi93jbsPnN8rJbz7IzxzGdq5KLhFvg0pKdmbqGxbBS9h1n7OB3aKDjEAyBn%2F2iZLn%2Fag89U%2FS7u7Li2Ydpp656oJDZvhi3%2BxjD9xL7sZN2OD%2B5QVGCzm2hJURFEEC1PfWz4%2BvsHFqdEgKZ%2B%2B2S2wG8BA8alRNabD2J6jf82KiiE6WZfFEIokLAPT5q7yTY%2FrO4brS8Sz98EQEQ5q8eG40UwOZAEsLjqoGVKdkw%2B90NAg%3D%3D%26track3Data%3DoAWLm383KJFvzqC3QwuIBTTkDD5Cu0CEWbfuzzTbDDYFA22hLhJPNJIwoEGLLyRadPLEo1IC3Rs6HajVSLDu4WdLQnufnRudpE7OUFPOJLVD8TcWK%2FG73OKmQaz6y4fJtU7moRhgnsbRE6EY%2BdYTwUOFMu8wzpqNPCN2sYdQNzB0AMhH1A5dUaq%2B8NlF9aYWyJJXlKff5xv6svXETthPUhTibyO3uZmomKLKDux0aAcRPolTZRYcKdkXtajsKv%2B2LkBhvYrKz3JBs0fp4OmVWDQN706uIxq15mMxRAfwHy%2FqFPRO5AKLGOxi0VI7zgzhA3%2BqLYBpit5FFUt9vKzMKg%3D%3D%7D&signMethod=01&accNo=6221501000003501335&merName=%E7%BF%BC%E6%94%AF%E4%BB%98&merAbbr=YZF&certId=132428167074978684174718476555696101288&encoding=UTF-8&reqReserved=%E9%80%8F%E4%BC%A0%E4%BF%A1%E6%81%AF&bizType=000000&merCatCode=0000&orderId=20151216145605&signature=KEiiGOxHvMJwJTtb25gmcwRv5TL7weKStUIW34QYlZmcKXaA%2BddMnsLSLCBSAS%2BkBruy0%2FctafFL0VGH%2BcVfiUgRi%2Fy2Jz3ejkEVKCetfFZPeX5bJ4Y5mRCL1Y77Bsm1IM5db0bmKpQnefDyGz3tnPIwESm2lSE8fIe5cLbIUhQ%3D&txnTime=20151216145605&accessType=1]
+DEBUG nioEventLoopGroup-5-4 cn.com.bestpay.posp.netty.client.TransPospToUnipay - [2015121614560520151216145605] ： 银联同步返回数据[status:200]:accNo=6221501000003501335&accessType=1&acqInsCode=48375800&bizType=000000&certId=68759585097&currencyCode=156&encoding=UTF-8&merId=837448010000000&orderId=20151216145605&reqReserved=透传信息&respCode=60&respMsg=交易失败，详情请咨询您的发卡行[1000091]&signMethod=01&txnSubType=00&txnTime=20151216145605&txnType=71&version=5.0.0&signature=D6hSZGImRnMWGz9yZiX/lC1vUCo/awkfWWSoudhjH8a1xh4vFU+A8A54ZDH3aX+rvmsYsLuPfNW4gkPv5IuPYEVvTGkmtBpRv08kmXaPtILAIThmnhqKyKmkPORln46mYZZzmjvAc4BBWOFsEdcP9opNuuYQksyTOWegJ856r+kgwnwH78K3oukVI5V9PHtlACjiCEDHRkPG2WhCcmWT9EPPdJE+32A5ZwrtxOpAnk8qTXQLB1ZfveiLR17dSUXEv1bk2rDI9MQTamTWmJ+1tdzk8OKzrOIqg8CqvPp0ifPoR7rOkGarDlFClTip2SbHkala/7elsFsO+DeNg+OsYg==
+INFO nioEventLoopGroup-5-4 cn.com.bestpay.posp.netty.handler.PospTcpServerHandler - [2015121614560520151216145605] ： 银联同步响应，respCode:60 
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - Client alive count:[1]! 
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - Client alive count:[1]! 
+INFO main cn.com.bestpay.posp.netty.module.NettyChannelMap - [2015121614560520151216145605] info： remove channel! 
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - Client alive count:[0]! 
+DEBUG nioEventLoopGroup-5-5 cn.com.bestpay.posp.netty.handler.PospTcpServerHandler - 收到POSP请求:[cn.com.bestpay.posp.system.entity.TranDatas@73438980]
+INFO nioEventLoopGroup-5-5 cn.com.bestpay.posp.netty.handler.PospTcpServerHandler - [2015121614563920151216145639] ： 收到POSP请求! 
+DEBUG nioEventLoopGroup-5-5 cn.com.bestpay.posp.netty.client.HttpClient - 发银联url[https://101.231.204.80:5000/gateway/api/cardTransReq.do]的请求报文:[txnType=71&channelType=08&currencyCode=156&merId=837448010000000&acqInsCode=48375800&txnSubType=00&customerInfo=e3Bpbj1qMms0dXcvT2tMb1ExSnc0MzVuNTZyaHErVnIzSEZMbjNmdXU1V1dyNG9qczBFMW5KU0gzSHpIYVROWElkNzZ6SmF4SnVxRC82UysrRGJFUkY1TlR4ZjRobUlrbmxlbnllWFhoNDNRdkZiL3krbk5STCtpYVBqc1BrcG9FN2kvUk5jTVcvWm5QOUVVWEI2SEtWalE5UEI3emkvY0VRUTF0ZXpHRkh1ZDVCR3JNM2VrTnQrMzB2R29JTCtCNm1RbGxBcjlqRUxEczg0cnZGcGhkOTRHY2NDMTUvZnh4cnNkMXBSNFlseVdPdVZ5SzFjSlhDUHhUelFhUFhMME0zYkt2SnEvTUZhWEpvRk53S0V3aGI1QnVSYkNqUDhxSy84MG5iNjhyOXNBUHpMQ3EvTEgrQ3hIOEYrS0pmTHFhNjhrNlp1STcvZ2pYZjNqWlBDYkJod2RKd2c9PX0%3D&version=5.0.0&accType=01&cardTransData=%7BcarrierAppTp%3D3%26carrierTp%3D0%26track2Data%3DWOW4ThGHQjKKVjp%2FxJ5D3ze75PcTAlPSq9qWIdlXyHghN7BNKb5UdUqQATNHe9HHYn76Yi%2FNXea4kMJnyKgRfQz9nA3sa7G5MqjaN8wTMeLFIEScfTUrLww0u9mTLAfop%2BL4Vtxk%2B1i3R5FHB562vfxLOGaIQQQOAlx71zgNqxDPxlYAN%2Bcb64I788KnYBbuwrU3Y0uV7iJVdpj%2FBhx%2BJXoLv%2FTqZxq4znFxHay0fNtXYcdyxotShuIKKgrLqAW8eWTgj%2FQWoxj7smssxW2rwxPD5g%2FOvQZ1k5q6ju7z48dDzz3OHGF80TFH9EAoBQQVJZAi54%2BzEsyeyIgZpl0aKw%3D%3D%26track3Data%3DtYvBW5F%2FDoNyOnjgdItYUQ26zaGM2MxUoxZxtSHIzj%2F4JkGjyLYOQSG4%2BDj9pECMuQOKyqae6%2Fe63H2Y3qTOBGwMO8g%2BBRcDbp1crbqTzaGZsWD17GPR3BjmHICh3Awtp%2FDa%2FxsxuLxEpJnPflElkA3NqP9fAQV9lXpkp82zPwsTsOuqjldSo%2B%2FUXTXCLkghZOdMkoD2WpVmd1l6VOALMMEaVYhOnSq2LVsAJmEHTGyBXZLPc19NLcaY2MdEDeKe0Z2cA8gO%2Fioiy0XyWIwPM0gJOdhkNAF9ON8TEZvXmrZO8lHCR9xcyMOKjOjHJESM7AHI%2Bxmd5nyDYqG8xhuloA%3D%3D%7D&signMethod=01&accNo=6210300017273977&merName=%E7%BF%BC%E6%94%AF%E4%BB%98&merAbbr=YZF&certId=132428167074978684174718476555696101288&encoding=UTF-8&reqReserved=%E9%80%8F%E4%BC%A0%E4%BF%A1%E6%81%AF&bizType=000000&merCatCode=0000&orderId=20151216145639&signature=st2YKpaFrmpyq%2F%2BFdx939cGopwsFMadS8c9GVPdI17LfdnHSHQ3uq74HYQx0UWnmHucHb9ntOAy95OYy8sALi2N%2FpaLfbjg3ax8ullSJh2GEKRkVRPy6t4CNmlPge2fE%2F7XdKV56cSMM3wjdf6dSrgYkgrxw2vzuCaZJxlPW%2FbM%3D&txnTime=20151216145639&accessType=1]
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - Client alive count:[1]! 
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - Client alive count:[1]! 
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - Client alive count:[1]! 
+ERROR nioEventLoopGroup-5-5 cn.com.bestpay.posp.netty.client.TransPospToUnipay - [2015121614563920151216145639] ： 请求发送银联失败!
+INFO nioEventLoopGroup-5-5 cn.com.bestpay.posp.netty.handler.PospTcpServerHandler - [2015121614563920151216145639] ： 银联同步响应，respCode:98 
+DEBUG nioEventLoopGroup-5-5 cn.com.bestpay.posp.netty.handler.PospTcpServerHandler - 收到POSP请求:[cn.com.bestpay.posp.system.entity.TranDatas@21838098]
+INFO nioEventLoopGroup-5-5 cn.com.bestpay.posp.netty.handler.PospTcpServerHandler - [2015121614563920151216145639] ： 收到POSP请求! 
+DEBUG nioEventLoopGroup-5-5 cn.com.bestpay.posp.netty.client.HttpClient - 发银联url[https://101.231.204.80:5000/gateway/api/cardTransReq.do]的请求报文:[txnType=00&merId=837448010000000&acqInsCode=48375800&txnSubType=01&version=5.0.0&signMethod=01&certId=132428167074978684174718476555696101288&encoding=UTF-8&bizType=000000&signature=lO3I%2FYRVqGz%2Fr9CNeUk9bA6nB7kSOp4SfduzynlOaFauKL0nynaJwDbu0pIyZAEx68O3y3VjmAy0TDUoK4gWtATFqxJtbXYcRJU1APHzEvKxk2NvCmWOIep53GHMsh41byUQhIs6Z5BB9lmWKKhuUlaPbPPhudfH27qfw0CwfnM%3D&orderId=20151216145639&accessType=1&txnTime=20151216145639]
+DEBUG nioEventLoopGroup-5-5 cn.com.bestpay.posp.netty.client.TransPospToUnipay - [2015121614563920151216145639] ： 银联同步返回数据[status:200]:respCode=10&certId=68759585097&signMethod=01&signature=ovx9pFyvg/5cXb7rxQXJJsWYwwp79ZDgUeRiRj2v3PJiZCwNtB5WtQiWoiPQmcaxwiy6cfig63msmgbBeDIyT0vTATxFxLS+NFV/MaIJHfD+5uRypHK/Ov2W0lFpGamofKJs6sHNUKOezewx0hMVQtlVkbri3YZiY6CxTmJ67GwDwXtTiFjMcepf9e+QAcKBp70HH2ygbv/YteA4VRM0dtl0bWKPcLy5Kem7eAL+sCWFEBOP9VxwQeKuv9DnQ8qsC6/nQgkbGM0jIME2J/vQ1cNsxPw86y5upNmV96qVvNhjI2Zz4z88LYpeMYbA9ixIp6Mb4ji5qcK0KWwJqtHOxw==
+INFO nioEventLoopGroup-5-5 cn.com.bestpay.posp.netty.handler.PospTcpServerHandler - [2015121614563920151216145639] ： 银联同步响应，respCode:10 
+DEBUG nioEventLoopGroup-5-5 cn.com.bestpay.posp.netty.handler.PospTcpServerHandler - 收到POSP请求:[cn.com.bestpay.posp.system.entity.TranDatas@62b08658]
+INFO nioEventLoopGroup-5-5 cn.com.bestpay.posp.netty.handler.PospTcpServerHandler - [2015121614563920151216145639] ： 收到POSP请求! 
+DEBUG nioEventLoopGroup-5-5 cn.com.bestpay.posp.netty.client.HttpClient - 发银联url[https://101.231.204.80:5000/gateway/api/cardTransReq.do]的请求报文:[txnType=00&merId=837448010000000&acqInsCode=48375800&txnSubType=01&version=5.0.0&signMethod=01&certId=132428167074978684174718476555696101288&encoding=UTF-8&bizType=000000&signature=lO3I%2FYRVqGz%2Fr9CNeUk9bA6nB7kSOp4SfduzynlOaFauKL0nynaJwDbu0pIyZAEx68O3y3VjmAy0TDUoK4gWtATFqxJtbXYcRJU1APHzEvKxk2NvCmWOIep53GHMsh41byUQhIs6Z5BB9lmWKKhuUlaPbPPhudfH27qfw0CwfnM%3D&orderId=20151216145639&accessType=1&txnTime=20151216145639]
+DEBUG nioEventLoopGroup-5-5 cn.com.bestpay.posp.netty.client.TransPospToUnipay - [2015121614563920151216145639] ： 银联同步返回数据[status:200]:respCode=10&certId=68759585097&signMethod=01&signature=ovx9pFyvg/5cXb7rxQXJJsWYwwp79ZDgUeRiRj2v3PJiZCwNtB5WtQiWoiPQmcaxwiy6cfig63msmgbBeDIyT0vTATxFxLS+NFV/MaIJHfD+5uRypHK/Ov2W0lFpGamofKJs6sHNUKOezewx0hMVQtlVkbri3YZiY6CxTmJ67GwDwXtTiFjMcepf9e+QAcKBp70HH2ygbv/YteA4VRM0dtl0bWKPcLy5Kem7eAL+sCWFEBOP9VxwQeKuv9DnQ8qsC6/nQgkbGM0jIME2J/vQ1cNsxPw86y5upNmV96qVvNhjI2Zz4z88LYpeMYbA9ixIp6Mb4ji5qcK0KWwJqtHOxw==
+INFO nioEventLoopGroup-5-5 cn.com.bestpay.posp.netty.handler.PospTcpServerHandler - [2015121614563920151216145639] ： 银联同步响应，respCode:10 
+DEBUG nioEventLoopGroup-5-5 cn.com.bestpay.posp.netty.handler.PospTcpServerHandler - 收到POSP请求:[cn.com.bestpay.posp.system.entity.TranDatas@1c90ca10]
+INFO nioEventLoopGroup-5-5 cn.com.bestpay.posp.netty.handler.PospTcpServerHandler - [2015121614563920151216145639] ： 收到POSP请求! 
+DEBUG nioEventLoopGroup-5-5 cn.com.bestpay.posp.netty.client.HttpClient - 发银联url[https://101.231.204.80:5000/gateway/api/cardTransReq.do]的请求报文:[txnType=00&merId=837448010000000&acqInsCode=48375800&txnSubType=01&version=5.0.0&signMethod=01&certId=132428167074978684174718476555696101288&encoding=UTF-8&bizType=000000&signature=lO3I%2FYRVqGz%2Fr9CNeUk9bA6nB7kSOp4SfduzynlOaFauKL0nynaJwDbu0pIyZAEx68O3y3VjmAy0TDUoK4gWtATFqxJtbXYcRJU1APHzEvKxk2NvCmWOIep53GHMsh41byUQhIs6Z5BB9lmWKKhuUlaPbPPhudfH27qfw0CwfnM%3D&orderId=20151216145639&accessType=1&txnTime=20151216145639]
+DEBUG nioEventLoopGroup-5-5 cn.com.bestpay.posp.netty.client.TransPospToUnipay - [2015121614563920151216145639] ： 银联同步返回数据[status:200]:respCode=10&certId=68759585097&signMethod=01&signature=ovx9pFyvg/5cXb7rxQXJJsWYwwp79ZDgUeRiRj2v3PJiZCwNtB5WtQiWoiPQmcaxwiy6cfig63msmgbBeDIyT0vTATxFxLS+NFV/MaIJHfD+5uRypHK/Ov2W0lFpGamofKJs6sHNUKOezewx0hMVQtlVkbri3YZiY6CxTmJ67GwDwXtTiFjMcepf9e+QAcKBp70HH2ygbv/YteA4VRM0dtl0bWKPcLy5Kem7eAL+sCWFEBOP9VxwQeKuv9DnQ8qsC6/nQgkbGM0jIME2J/vQ1cNsxPw86y5upNmV96qVvNhjI2Zz4z88LYpeMYbA9ixIp6Mb4ji5qcK0KWwJqtHOxw==
+INFO nioEventLoopGroup-5-5 cn.com.bestpay.posp.netty.handler.PospTcpServerHandler - [2015121614563920151216145639] ： 银联同步响应，respCode:10 
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - Client alive count:[1]! 
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - Client alive count:[1]! 
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - Client alive count:[1]! 
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - Client alive count:[1]! 
+INFO main cn.com.bestpay.posp.netty.module.NettyChannelMap - [2015121614563920151216145639] info： remove channel! 
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - Client alive count:[0]! 
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - 暂时没有交易...
+DEBUG nioEventLoopGroup-5-6 cn.com.bestpay.posp.netty.handler.PospTcpServerHandler - 收到POSP请求:[cn.com.bestpay.posp.system.entity.TranDatas@4d513b99]
+INFO nioEventLoopGroup-5-6 cn.com.bestpay.posp.netty.handler.PospTcpServerHandler - [2015121615032420151216150324] ： 收到POSP请求! 
+DEBUG nioEventLoopGroup-5-6 cn.com.bestpay.posp.netty.client.HttpClient - 发银联url[https://101.231.204.80:5000/gateway/api/cardTransReq.do]的请求报文:[txnType=71&channelType=08&currencyCode=156&merId=837448010000000&acqInsCode=48375800&txnSubType=00&customerInfo=e3Bpbj1VdnpyN25XUnhPLzhwbGx5aThnWGdpNmNJMlZSYXhFajQ5dmJCZ0V1OGZ0WDAySE56TjJ1OUNteVB1U3Q0M0tiNGNndjlROUorZEp0MjhMYmI5U09pQ2M5YkFCUFpCL09GNGFVaGx5SjA1a004U0Fic3RnU1pXZG81cVpvQ2NOd2gxdkVyNGlyOU40QnRxejdEL2ZkbVFHR1B0dmFSbGhCYnU0RUtiY2R2S0R5bUpVNDA1YUgwajVzSFd6c0hCZWE1RnRDcXd3Q1lHdTlFei81UHBhWDlUTHAxcXhiL3lsVlNiSnhuc1RweTdZRk1WdEwzNmpqSVNUd21Yb0wxbForK09vR3FncGRIc29hMGVmOWl0NDBEYlI3VGRMZDFkZTNEUEtRcXdNWmRhdXZtZVdUZmN6TjA0WGk2SnJPdzhHM3JjbmdNSTZFQzNhWUpHZkhha1F5M3c9PX0%3D&version=5.0.0&accType=01&cardTransData=%7BcarrierAppTp%3D3%26carrierTp%3D0%26track2Data%3DjxuNkZCo4nxUPmO1yGcddasHAyE3PaDEhDMDtMxhOkgCHUOJ3xgbp%2BQO8WBn9%2F%2FEg2mYJbSe1T%2B3gJFc%2BWrTVdL9ZIa2C%2BBGJx3IXlv4FTXGAfpTpwdZIxisNyAreHnAMQV8PRtI5jUiMm6syvs117c0FGGS5%2B61GkljqLgx%2F27858be1qXfCdmn0PpVBYsRW1bhv1put67%2B9PqoBYic5%2Bo637CkXmeiIscdwwT12AEI3H5oT8fi%2B5Duh6mS%2FbrXUnhlSNkT24yds%2FDX1WY%2BtLmmc6fM0CwGLoGTVX%2Bu%2B4vrJCDjflBmT7iyRqXGn%2F1dqwvMpoWvhc9rYFr4GIv%2BjQ%3D%3D%26track3Data%3Df6UK%2FQyPwQ3XgXrilF%2Bdi%2BY5VtJo0ZH9KXF4B3mw7qAexwPMBz6UXTSJ60AwhPeQN3T%2Fpv1RG0znfBZu6fdcemc9yXPTAFv5HHM9HehSJhk4y2%2FDyhrOIInxk1JhdzyT2fDBg3i1lTQ%2FVQe3kzjwMO4%2FzreXKXbATtWxFGb10i26F2Iku8mTCnXqiIVhzcy3DjnXXU5d8hBGZbv6%2Fh26VgWL3kjt1goa06sgOUOpwzEyCtyv8SMXjRRLUyQc8GUuPO%2BznhnSIb%2FzQirGopOaxn4na%2FPGVM3RKLdl4mtAhMlEplk7wHMahD7g%2FXkV68lCycuv6OQK0la7WzV0hgVREA%3D%3D%7D&signMethod=01&accNo=6210300017273977&merName=%E7%BF%BC%E6%94%AF%E4%BB%98&merAbbr=YZF&certId=132428167074978684174718476555696101288&encoding=UTF-8&reqReserved=%E9%80%8F%E4%BC%A0%E4%BF%A1%E6%81%AF&bizType=000000&merCatCode=0000&orderId=20151216150324&signature=eI5XvvS93f5v18X2Eic64J6Ep4n%2FPIogLWpp3BYMTkE%2FJyHBOw2lhFAebzZRFEUklEtU%2FEpmYTFHoAuI9lnA%2FPJdsBwd4ih06Jw%2Fp1rN5iXVPekn0qnV57TNCbX2tYutKIA4DWjpr7ETJ4fWo31uZoDhu9YjO4%2F6YmI2Cbzf7Pw%3D&txnTime=20151216150324&accessType=1]
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - Client alive count:[1]! 
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - Client alive count:[1]! 
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - Client alive count:[1]! 
+ERROR nioEventLoopGroup-5-6 cn.com.bestpay.posp.netty.client.TransPospToUnipay - [2015121615032420151216150324] ： 请求发送银联失败!
+INFO nioEventLoopGroup-5-6 cn.com.bestpay.posp.netty.module.NettyChannelMap - [2015121615032420151216150324] info： remove channel! 
+ERROR nioEventLoopGroup-5-6 cn.com.bestpay.posp.netty.handler.PospTcpServerHandler - [2015121615032420151216150324] error： 异常关闭连接! 
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - Client alive count:[0]! 
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - 暂时没有交易...
+DEBUG nioEventLoopGroup-5-7 cn.com.bestpay.posp.netty.handler.PospTcpServerHandler - 收到POSP请求:[cn.com.bestpay.posp.system.entity.TranDatas@6cfed27b]
+INFO nioEventLoopGroup-5-7 cn.com.bestpay.posp.netty.handler.PospTcpServerHandler - [2015121615085120151216150851] ： 收到POSP请求! 
+DEBUG nioEventLoopGroup-5-7 cn.com.bestpay.posp.netty.client.HttpClient - 发银联url[https://101.231.204.80:5000/gateway/api/cardTransReq.do]的请求报文:[txnType=71&channelType=08&currencyCode=156&merId=837448010000000&acqInsCode=48375800&txnSubType=00&customerInfo=e3Bpbj1uR1JIN0VnSk9ndXhqYVNuMGZTZmFoL2U0YjJVZ0hZSlYvOXQrUkJGVjdtV0VDYXVIanEwSEh2UEhUNkhJRjF6WkFKVHdjQ0lQUnNEbTJzdGhrbU5taDBZQXJ0ZzBZc0dRRXVPekxXeTRvdnRrM0RMTFR2ZEhLUUxvVFJjMDNoamQydzhKRTMvZXZiTFpzZzVhY09tQ1ZXajU5cEFwN1NzWHJBR0RiYmRqQWtUWEVmOXhaSUtrYlFablVkb1lHam52c3F6amlsVjFybUFydFk1TjMydGlhU0FiZytkZnFVR2lrSVhhTExuNUVyZG5LYjJVdnRNNkdYa3dkUVZvbmw1cjBTS2VYb2UxOHhaYzczZGFGVFZINHlabTlPMFZVS0Y2Y0JXRHdXY2ovVjF4UWdldG1SZE1TZUpBYm9CU0MwWUZSMXNZWDkxQVB5d2Z6b09tU1NtdFE9PX0%3D&version=5.0.0&accType=01&cardTransData=%7BcarrierAppTp%3D3%26carrierTp%3D0%26track2Data%3DZh1GqjUPKFC7ZlybTSZjeWzngfJn3wGoAgLjkLTMYVJGXEuKdlQTsca6D%2B%2F5nwSUZQkKwsZ%2FJvUap%2FUp66iNA1DAY8xHbpcB3pE%2B4IIMBD2xn%2BhnM4vvufdP84NlvvlUY4ye%2FJGRlZwAOQ%2FrTyVVNYTMg9YMjx1%2FxJVB0XVV%2Ff2BWB0%2BzP6FUzxfB%2FrppkcEeMjA1hNWIRd6IArIuwpWtwOJc7UcKaoVOTdUtZCWPvM9cpHhFat0IS20GTIFEeCHrw92WniR4pRf%2B1jcAfSi%2F9pW%2BpvY8tkesbgzjWUarkuOvrK9ymvudXn84PlbbB5NN2Mwgflv4F6%2FJ8irRDv1cA%3D%3D%7D&signMethod=01&accNo=6226220100028512&merName=%E7%BF%BC%E6%94%AF%E4%BB%98&merAbbr=YZF&certId=132428167074978684174718476555696101288&encoding=UTF-8&reqReserved=%E9%80%8F%E4%BC%A0%E4%BF%A1%E6%81%AF&bizType=000000&merCatCode=0000&orderId=20151216150851&signature=b17y6j3hquCnVNlQ8kEV1lISzdxPsP5vLPAxztW%2FNHyc4IizOO5quqsY0VknspCU5NCfN2KTeP%2B5S9TOLIAegbqitQqlUw7B2F%2Ftca6Lq3pZk0%2F5A%2Ft3vcYclriuq2XKkd%2B8bxhVYCX%2F2T8QcHROWmSTO1WNM4Wef3B%2B9wpaAiM%3D&txnTime=20151216150851&accessType=1]
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - Client alive count:[1]! 
+DEBUG nioEventLoopGroup-5-7 cn.com.bestpay.posp.netty.client.TransPospToUnipay - [2015121615085120151216150851] ： 银联同步返回数据[status:200]:accNo=6226220100028512&accessType=1&acqInsCode=48375800&bizType=000000&certId=68759585097&currencyCode=156&encoding=UTF-8&merId=837448010000000&orderId=20151216150851&reqReserved=透传信息&respCode=61&respMsg=输入的卡号无效，请确认后输入[1000014]&signMethod=01&txnSubType=00&txnTime=20151216150851&txnType=71&version=5.0.0&signature=FrB5GreHIetqkRC0YqvW2zSfgrC0NVVMf7hZUDqzjGB94Mc0gtScigOBjdiaqgIuzcQCLSqwSm8Fu8RkqVzvzODWuWSU5WjIwX2c6Dln89sIedie7pmu3H3jlyNgM9cessD2p93DiD8UyZfgYVjOx4Dbo9vu/+xFvRwRhInjGB9Hy4CIeCdVlvn3wZe4C90dHhg+1jplWyMWqK0+1TmyEOQEA1GP70+8tlja2YNE5shcLJwYYdzfsfJ521VnUiXIdMdPH6u7G9RP17DNuEd1AB4Onk7qyyve4n9HQI9qSREwyBjx+Gb2C+ikk8sKkrhwM0PQbjnb3YgHiLhbN/VxuQ==
+INFO nioEventLoopGroup-5-7 cn.com.bestpay.posp.netty.handler.PospTcpServerHandler - [2015121615085120151216150851] ： 银联同步响应，respCode:61 
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - Client alive count:[1]! 
+INFO main cn.com.bestpay.posp.netty.module.NettyChannelMap - [2015121615085120151216150851] info： remove channel! 
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - Client alive count:[0]! 
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - 暂时没有交易...
+DEBUG nioEventLoopGroup-5-8 cn.com.bestpay.posp.netty.handler.PospTcpServerHandler - 收到POSP请求:[cn.com.bestpay.posp.system.entity.TranDatas@32dbb9b]
+INFO nioEventLoopGroup-5-8 cn.com.bestpay.posp.netty.handler.PospTcpServerHandler - [2015121615195420151216151954] ： 收到POSP请求! 
+DEBUG nioEventLoopGroup-5-8 cn.com.bestpay.posp.netty.client.HttpClient - 发银联url[https://101.231.204.80:5000/gateway/api/cardTransReq.do]的请求报文:[txnType=71&channelType=08&currencyCode=156&merId=837448010000000&acqInsCode=48375800&txnSubType=00&customerInfo=e3Bpbj1uSERYT0daNkxVVzZ0SVVHRUt1NHpEamRKSnhDc1lTY3VHS0s0dDhDNUtyQmpFZnV4ZlE5RmRSTFpiOVlabUh2bVFaak5yT0ZOOWN4OVVvNEZSZ1E2amxHc3pZOUlLTElrN1UwQldkaXZ5d3N4ZjlvcVRQdkdTcGlxVDA1Zy9vQWtRSXlKbHl5SXJOK0ZDSy93TU02cnF3SVlpcFRwZVhtOUt1MkV4OXZIR0V3c0IzL09RSzJTcXE1ZlVQbWFzZzEyUDFtK2FMakhZMDI0dTEwd0tQTlB5bnVrV0t6ZnhjOVF0dWlHa3k0VVdIMk11dXZhRXpWeFdnMFhjWFd4NEZnQ2YrZG5WQWg3UW9HaElHY2l3bkJySFA1NzNCOHloK0R1bzRFd3pUZE9uQ2wzMEhxLzJleVluQ3Jwbjl0b3NUVnl6Sm1WQWNLNEJtakhsai92TVFGcWc9PX0%3D&version=5.0.0&accType=01&cardTransData=%7BcarrierAppTp%3D3%26carrierTp%3D0%26encryptCertId%3D137445581060%26track2Data%3DkzIK1zDvADUoRlGq8fuv2CXHMPl%2FsZ39s8%2FDEaP%2BB1%2BdIp%2FeGCTBWwWFmq16%2Be9ATfF981ct6LyNjc6C3hRNHf%2BhovawEvSn2T1cYB7O1I6m%2FLbCYISaTbwYfCfY7BgmSPYYOjO7LXntnzxNbtP4jd57ErNs8Dyzrkb3bIR8XAl2zfQ0uTSGk6pc3n0z%2F2GVxH%2Fj8poYbAsiOJuRGwzYYp9e0Rmrlwy5%2F0M9sB1jSwa%2FI4TQkqmJaZYWtc9r9m9KcitdkfOMmjOuAvRnRYMu3tBkdGoTKUAMTcwyTcyiGAopUgTDPW3O5GOXKlqwyaDvRUUKvpFrpWAPfaXHm0PrqQ%3D%3D%26track3Data%3DS0tvOur6yHz7hwhO%2Fojy49Gyf%2Frmp%2Bxk%2FqLhEzsYVzV7NF70q2kTqPyRxU%2BYnxZ3czHOyS1bMPZVwdZXU0W9Hmk3QA7AeuNJ1Ga9V7KHyZbSza3V7gzx880w4v2LSva%2BuIrdQutn9HhvWxzBi%2F8f%2BMR3RnVmgTIihW5d9xtSuqegAk6eqXCOVf1SK48vDcba%2F1U3vvOu3EnCF9z%2BXJzld3buJ10KZHpqdLOJs0OxHDWgAR1503mJoC5M6T00hVDFGxLQxIRtmZMOFGZv7pMeQUx57PINSGlrhAX2Ly9wZYjMCrCZ5nUmTn2poqqtEm3T%2BOG6mlluTsA15FOHQjMswg%3D%3D%7D&signMethod=01&accNo=6210300017273977&merName=%E7%BF%BC%E6%94%AF%E4%BB%98&merAbbr=YZF&certId=132428167074978684174718476555696101288&encoding=UTF-8&reqReserved=%E9%80%8F%E4%BC%A0%E4%BF%A1%E6%81%AF&bizType=000000&merCatCode=0000&orderId=20151216151954&signature=JX7FWJcPp4L5pAUY0cicbJe0%2F9Kv2MCm%2BsJHuUR2Xx2cxDol8iRBuNis96ThyeMYQW4wD2nLqoC084zPKDVb8mnMhAzgIQ5ANon7lWAic%2Bts%2BFwdD0puaXzqH6AheO6NOwTlFSRER07cyR4HCZXIqq%2F5yXXBgvKh%2FwObP8kTubM%3D&txnTime=20151216151954&accessType=1]
+DEBUG nioEventLoopGroup-5-8 cn.com.bestpay.posp.netty.client.TransPospToUnipay - [2015121615195420151216151954] ： 银联同步返回数据[status:200]:accNo=6210300017273977&accessType=1&acqInsCode=48375800&bizType=000000&certId=68759585097&currencyCode=156&encoding=UTF-8&merId=837448010000000&orderId=20151216151954&reqReserved=透传信息&respCode=10&respMsg=报文格式错误[6100030]&signMethod=01&txnSubType=00&txnTime=20151216151954&txnType=71&version=5.0.0&signature=B/mhjiy21JWClAeM7fRNwpQl+FKeD7KswWESclL8PTJU7BZH+3uENibjXGbgtQGRsE8rz6DkHUKkZcHG0Z/jt85bSTM9WLdDk+fsZtYuVJjTFHy9D8smG7JM7PRDpxpr13CnctAYIwvqNx5WVsCFCt++JN48wfQplkmx2snDu27/Ji2nUYXQbchDb3l0X2mWVUgEMo6hZn/SP8HWjCRHlD/onV/oggwEgUu5+yC2ghq6K2zKd5zWgBXqVsj38SD5YKgezs51bdRp2ROW/k2ynzQYWG+iPJ/Gth+kir389m9MfPfdM+ESif6+Di6yDZJYWK01eAx/1amJHuLd/47/rg==
+INFO nioEventLoopGroup-5-8 cn.com.bestpay.posp.netty.handler.PospTcpServerHandler - [2015121615195420151216151954] ： 银联同步响应，respCode:10 
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - Client alive count:[1]! 
+INFO main cn.com.bestpay.posp.netty.module.NettyChannelMap - [2015121615195420151216151954] info： remove channel! 
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - Client alive count:[0]! 
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - 暂时没有交易...
+DEBUG nioEventLoopGroup-5-9 cn.com.bestpay.posp.netty.handler.PospTcpServerHandler - 收到POSP请求:[cn.com.bestpay.posp.system.entity.TranDatas@1be2bcc8]
+INFO nioEventLoopGroup-5-9 cn.com.bestpay.posp.netty.handler.PospTcpServerHandler - [2015121615242320151216152423] ： 收到POSP请求! 
+DEBUG nioEventLoopGroup-5-9 cn.com.bestpay.posp.netty.client.HttpClient - 发银联url[https://101.231.204.80:5000/gateway/api/cardTransReq.do]的请求报文:[txnType=71&channelType=08&currencyCode=156&merId=837448010000000&acqInsCode=48375800&txnSubType=00&customerInfo=e3Bpbj1zc0hNLzhSMEpuby8rOEorN3RYS2VzUGJvNlhnSEZyNUtFWjNGaThGNWlaTUJBQzRoOGNJbDhZWjhyYUtsd3d6UXlmZFJCcTlwUDBDcnhHQ3dCU080eWdtQmNTS3NBa1IzL0pURStsbHZsVWl4UHUzTlAzaFZPZ21pSFZXUW5jMW43RG42YXU0NmpCbWR1UzBQdGRvNldyc3o1OWNBRVFBKzFBemczRENTY0ErZDhldERNbFpYWk1DZmw4WWFsZnUxMmhSa2hNYXFwUDRGbWxERW1NMEF2SGdUbU91dmJicW5HWC94T3ZVelNhZS82V0JGbk4vd3lML0Q3WmJCcEw3dG5CWlZNVFlSM3BpMVlMNjlSYkhMQkYraEJ6STJraDJCSElOR2RNUXZUMUZaemR3VFZmUGJCYjV3OG5ZeG9ZUE1NVHJrUkswQTB2K2lqWHpmbitvU3c9PX0%3D&version=5.0.0&accType=01&cardTransData=%7BcarrierAppTp%3D3%26carrierTp%3D0%26track2Data%3DaJjg7RjAkqv%2FYSywMMxH1tgPdVH7sJZrSUlB6UGHXUoO3ebvSOlntqBNZptS3YQQDO1oO2u5gqjnLnczJNdio5f%2Bkx7AgLeZPlGI8v8cOUKqr0PQw%2FlvSbsHq1Z1nWLFzvYeUm9FSyUjk63CZyKqtpELYtsK8scQz47EeSVv9ojGKhtC90fLCMZBYJEjpTlC96LvpYWAEgNEIkXjRCjv2EZlSXQUwH%2FbcAg1Yi9sTwaexmP%2F5NBjZgXxJG2j6e6V%2FB7dLDF8g5HjbxNfvLvCfbkVXWnAkG3zwZ%2F0H8cT0kTIl%2Bpnz3D7lkPpUuuSGSR4dAMHIRXeyDP9IfDtpesPSw%3D%3D%26track3Data%3DnWxaB%2FTGbG5GnDjRdneSvqPlFsJD6ZiP0kC%2FoXakpHDC7ziEdL%2BkCMwGWV%2BUXScKBMuYXnAVIQCVAWbkgvfpRf5YOwDZI9ZBqLVbo9Od%2BQkP5HgCTpeqZrOdQsCCG4GbVV7MrXLJPqb%2FEL26OMxOGajaAtBsvBNhLKsTF%2FzxaWFcaATaozEa0hmv28wirEiBSfYuJqh192U6tdrMR71c1Y2UO3l0Qf5J%2B9c2pltT42zvfRjFzmxfcWSdaB7zJ4kveTNrwHWmRByJw5MQOeoCRN6vYyyQPlUwLZBUpCPAtA6AAZz7sLODbiP3GzLfBLGjp2PMwenGRnznNQoA9vkJ3Q%3D%3D%7D&signMethod=01&accNo=6210300017273977&merName=%E7%BF%BC%E6%94%AF%E4%BB%98&merAbbr=YZF&certId=132428167074978684174718476555696101288&encoding=UTF-8&reqReserved=%E9%80%8F%E4%BC%A0%E4%BF%A1%E6%81%AF&bizType=000000&merCatCode=0000&orderId=20151216152423&signature=hOj%2Fpl2aGOrArVS9awihYPQ71pjaTquwngAkwL8kz0kJXJAkocJ3NoesdZrd1nspkOKjRGNADpfuMeKJWb%2FSQn8FG25af556%2BLiPrYhpkAVuOIohTDEU8lTTrq%2FD9fbou4MSt0zQdpwmfOUQjWJnMW1eLOJ%2F0qedz64BGx4%2B%2F%2FU%3D&txnTime=20151216152423&accessType=1]
+DEBUG nioEventLoopGroup-5-9 cn.com.bestpay.posp.netty.client.TransPospToUnipay - [2015121615242320151216152423] ： 银联同步返回数据[status:200]:accNo=6210300017273977&accessType=1&acqInsCode=48375800&balance=[ {
+  "accType" : "10",
+  "balanceType" : "01",
+  "currencyCode" : "156",
+  "balanceSign" : "C",
+  "balance" : "831769482"
+}, {
+  "accType" : "10",
+  "balanceType" : "02",
+  "currencyCode" : "156",
+  "balanceSign" : "C",
+  "balance" : "832243902"
+} ]&bizType=000000&certId=68759585097&currencyCode=156&encoding=UTF-8&merId=837448010000000&orderId=20151216152423&reqReserved=透传信息&respCode=00&respMsg=成功[0000000]&signMethod=01&txnSubType=00&txnTime=20151216152423&txnType=71&version=5.0.0&signature=XX0Rj/LBmYN7YMJ9xAbjUOkA3dPyYT0zLvEGdUqivoC55OZNAHZtuGMBfzQyvQcBfnQEfGS4aspTTr0uslZyTAN1yFR72QhGfF3XXneamClxyNc8AmJL7h0AoDURAfBAqVGLI8G4mRGKHpYe/H/TAWNmacQNAfYDxRJHWKQ9z49mbRFND0ZGPTGzVArKtfwrWg8RGqqc4MDfTCyvQ1Z22jrSfjKWD1OdIrH1Pcg7uoFfQ3t3BdLdBV25nXn/89/c2VnAUkkIIM5U/0LT3LnhRac7QGQwwtFMI92ofDdw9KjEj4XSoK/cuT0/cPkd6rDiBCH/LQvPBvhAhwXhsMJ2rw==
+INFO nioEventLoopGroup-5-9 cn.com.bestpay.posp.netty.handler.PospTcpServerHandler - [2015121615242320151216152423] ： 银联同步响应，respCode:00 
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - Client alive count:[1]! 
+INFO main cn.com.bestpay.posp.netty.module.NettyChannelMap - [2015121615242320151216152423] info： remove channel! 
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - Client alive count:[0]! 
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - 暂时没有交易...
+INFO main cn.com.bestpay.posp.netty.module.Contants - TCP端口:9880
+INFO main cn.com.bestpay.posp.netty.module.Contants - HTTP端口:8025
+DEBUG main io.netty.util.internal.logging.InternalLoggerFactory - Using Log4J as the default logging framework
+DEBUG main io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 8
+DEBUG main io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+DEBUG main io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+DEBUG main io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+DEBUG main io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: true
+DEBUG main io.netty.util.internal.PlatformDependent - Platform: Windows
+DEBUG main io.netty.util.internal.PlatformDependent - Java version: 7
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.noUnsafe: false
+DEBUG main io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.noJavassist: false
+DEBUG main io.netty.util.internal.PlatformDependent - Javassist: unavailable
+DEBUG main io.netty.util.internal.PlatformDependent - You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: C:\Users\yzh\AppData\Local\Temp (java.io.tmpdir)
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+DEBUG main io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+DEBUG main io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+DEBUG main io.netty.util.internal.ThreadLocalRandom - -Dio.netty.initialSeedUniquifier: 0xede560bb14a55d3d (took 91 ms)
+DEBUG main io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: unpooled
+DEBUG main io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 65536
+DEBUG main io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+DEBUG main io.netty.util.NetUtil - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+DEBUG main io.netty.util.NetUtil - \proc\sys\net\core\somaxconn: 200 (non-existent)
+INFO main cn.com.bestpay.posp.netty.httpserver.BackHttpServer - 后台通知服务启动
+INFO main cn.com.bestpay.posp.netty.tcpserver.PospTCPServer - TCP Server start! 
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - 暂时没有交易...
+DEBUG nioEventLoopGroup-5-1 io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.bytebuf.checkAccessible: true
+DEBUG nioEventLoopGroup-5-1 io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+DEBUG nioEventLoopGroup-5-1 io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.maxRecords: 4
+DEBUG nioEventLoopGroup-5-1 io.netty.util.Recycler - -Dio.netty.recycler.maxCapacity.default: 262144
+DEBUG nioEventLoopGroup-5-1 io.netty.util.internal.Cleaner0 - java.nio.ByteBuffer.cleaner(): available
+DEBUG nioEventLoopGroup-5-1 cn.com.bestpay.posp.netty.handler.PospTcpServerHandler - 收到POSP请求:[cn.com.bestpay.posp.system.entity.TranDatas@608e14b7]
+INFO nioEventLoopGroup-5-1 cn.com.bestpay.posp.netty.handler.PospTcpServerHandler - [2015021121581760420151111215817] ： 收到POSP请求! 
+DEBUG nioEventLoopGroup-5-1 cn.com.bestpay.posp.netty.client.HttpClient - 发银联url[https://101.231.204.80:5000/gateway/api/queryTrans.do]的请求报文:[txnType=00&channelType=08&merId=888888888888888&acqInsCode=48375800&txnSubType=00&version=5.0.0&signMethod=01&certId=132428167074978684174718476555696101288&encoding=UTF-8&bizType=000000&encryptCertId=137445581060&orderId=20150211215817604&signature=JiS%2BcFIvlTpwEQKbyehMcfSf2bHBYMe%2FMFhg2otmYPcXu29qFyPx4moy1H7CEOscbYwObNrVml4N%2Ffbr7duVUp%2BUwaHeyoYeuOkfhz7KYPanP4gonVxluISS9Dybt9AsYWyN%2B5mPpib9dxlSxvlektwcVpIdPGWvKtGeknqAhrs%3D&accessType=1&txnTime=20151111215817]
+DEBUG nioEventLoopGroup-5-1 cn.com.bestpay.posp.netty.client.TransPospToUnipay - [2015021121581760420151111215817] ： 银联同步返回数据[status:200]:txnType=00&respCode=10&channelType=08&merId=888888888888888&acqInsCode=48375800&txnSubType=00&version=5.0.0&signMethod=01&certId=68759585097&encoding=UTF-8&respMsg=[9100003]Invalid field[txnTime]&bizType=000000&encryptCertId=137445581060&signature=Ugflp2lQqsLSW6N0n1+Ru4luoG1rCUujF60VUeIqXziaMAuXDALgBxOS46BO0EmpNSAht05QKwB4D59j31sr5VCOMH2SyZI6/DpAHtUEiE4Oqyb2Fd3tD9qj/r8V3jz+6UW+ja8Z8ww8pt8GYEurICJLSS9bTagRB7PLmzDpc2s2VRjTksvjlpzIMmtUN8ARd4I8BTedFo+vsw1X471POKRSgCW/gXu1aSWs2V2uZWZh2ghgaMgaeBpEpCP0N8RCRXcljBgXc0ErUj6qymWwAcrgEETzQ74Iv/GLU/Wc09+P7usSfLnBMrgMd3wMn+7V66A/dkK1hzFuDkiwmpOHUQ==&orderId=20150211215817604&txnTime=20151111215817&accessType=1
+INFO nioEventLoopGroup-5-1 cn.com.bestpay.posp.netty.handler.PospTcpServerHandler - [2015021121581760420151111215817] ： 银联同步响应，respCode:10 
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - Client alive count:[1]! 
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - Client alive count:[1]! 
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - Client alive count:[1]! 
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - Client alive count:[1]! 
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - Client alive count:[1]! 
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - Client alive count:[1]! 
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - Client alive count:[1]! 
+INFO main cn.com.bestpay.posp.netty.module.NettyChannelMap - [2015021121581760420151111215817] info： remove channel! 
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - Client alive count:[0]! 
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - 暂时没有交易...
+INFO main cn.com.bestpay.posp.netty.module.Contants - TCP端口:9880
+INFO main cn.com.bestpay.posp.netty.module.Contants - HTTP端口:8025
+DEBUG main io.netty.util.internal.logging.InternalLoggerFactory - Using Log4J as the default logging framework
+DEBUG main io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 8
+DEBUG main io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+DEBUG main io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+DEBUG main io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+DEBUG main io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: true
+DEBUG main io.netty.util.internal.PlatformDependent - Platform: Windows
+DEBUG main io.netty.util.internal.PlatformDependent - Java version: 7
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.noUnsafe: false
+DEBUG main io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.noJavassist: false
+DEBUG main io.netty.util.internal.PlatformDependent - Javassist: unavailable
+DEBUG main io.netty.util.internal.PlatformDependent - You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: C:\Users\yzh\AppData\Local\Temp (java.io.tmpdir)
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+DEBUG main io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+DEBUG main io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+DEBUG main io.netty.util.internal.ThreadLocalRandom - -Dio.netty.initialSeedUniquifier: 0x044399dff4de4868 (took 10 ms)
+DEBUG main io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: unpooled
+DEBUG main io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 65536
+DEBUG main io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+DEBUG main io.netty.util.NetUtil - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+DEBUG main io.netty.util.NetUtil - \proc\sys\net\core\somaxconn: 200 (non-existent)
+INFO main cn.com.bestpay.posp.netty.httpserver.BackHttpServer - 后台通知服务启动
+INFO main cn.com.bestpay.posp.netty.tcpserver.PospTCPServer - TCP Server start! 
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - 暂时没有交易...
+DEBUG nioEventLoopGroup-5-1 io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.bytebuf.checkAccessible: true
+DEBUG nioEventLoopGroup-5-1 io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+DEBUG nioEventLoopGroup-5-1 io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.maxRecords: 4
+DEBUG nioEventLoopGroup-5-1 io.netty.util.Recycler - -Dio.netty.recycler.maxCapacity.default: 262144
+DEBUG nioEventLoopGroup-5-1 io.netty.util.internal.Cleaner0 - java.nio.ByteBuffer.cleaner(): available
+DEBUG nioEventLoopGroup-5-1 cn.com.bestpay.posp.netty.handler.PospTcpServerHandler - 收到POSP请求:[cn.com.bestpay.posp.system.entity.TranDatas@620a02d]
+INFO nioEventLoopGroup-5-1 cn.com.bestpay.posp.netty.handler.PospTcpServerHandler - [2015021121581760420151111215817] ： 收到POSP请求! 
+DEBUG nioEventLoopGroup-5-1 cn.com.bestpay.posp.netty.client.HttpsClient - 发银联url[https://101.231.204.80:5000/gateway/api/queryTrans.do]的请求报文:[txnType=00&channelType=08&merId=888888888888888&acqInsCode=48375800&txnSubType=00&version=5.0.0&signMethod=01&certId=132428167074978684174718476555696101288&encoding=UTF-8&bizType=000000&encryptCertId=137445581060&orderId=20150211215817604&signature=JiS%2BcFIvlTpwEQKbyehMcfSf2bHBYMe%2FMFhg2otmYPcXu29qFyPx4moy1H7CEOscbYwObNrVml4N%2Ffbr7duVUp%2BUwaHeyoYeuOkfhz7KYPanP4gonVxluISS9Dybt9AsYWyN%2B5mPpib9dxlSxvlektwcVpIdPGWvKtGeknqAhrs%3D&accessType=1&txnTime=20151111215817]
+DEBUG nioEventLoopGroup-5-1 cn.com.bestpay.posp.netty.client.TransPospToUnipay - [2015021121581760420151111215817] ： 银联同步返回数据[status:200]:txnType=00&respCode=10&channelType=08&merId=888888888888888&acqInsCode=48375800&txnSubType=00&version=5.0.0&signMethod=01&certId=68759585097&encoding=UTF-8&respMsg=[9100003]Invalid field[txnTime]&bizType=000000&encryptCertId=137445581060&signature=Ugflp2lQqsLSW6N0n1+Ru4luoG1rCUujF60VUeIqXziaMAuXDALgBxOS46BO0EmpNSAht05QKwB4D59j31sr5VCOMH2SyZI6/DpAHtUEiE4Oqyb2Fd3tD9qj/r8V3jz+6UW+ja8Z8ww8pt8GYEurICJLSS9bTagRB7PLmzDpc2s2VRjTksvjlpzIMmtUN8ARd4I8BTedFo+vsw1X471POKRSgCW/gXu1aSWs2V2uZWZh2ghgaMgaeBpEpCP0N8RCRXcljBgXc0ErUj6qymWwAcrgEETzQ74Iv/GLU/Wc09+P7usSfLnBMrgMd3wMn+7V66A/dkK1hzFuDkiwmpOHUQ==&orderId=20150211215817604&txnTime=20151111215817&accessType=1
+INFO nioEventLoopGroup-5-1 cn.com.bestpay.posp.netty.handler.PospTcpServerHandler - [2015021121581760420151111215817] ： 银联同步响应，respCode:10 
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - Client alive count:[1]! 
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - Client alive count:[1]! 
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - Client alive count:[1]! 
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - Client alive count:[1]! 
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - Client alive count:[1]! 
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - Client alive count:[1]! 
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - Client alive count:[1]! 
+INFO main cn.com.bestpay.posp.netty.module.NettyChannelMap - [2015021121581760420151111215817] info： remove channel! 
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - Client alive count:[0]! 
+INFO main cn.com.bestpay.posp.netty.ApplicationMain - 暂时没有交易...
